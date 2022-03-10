@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Header } from "semantic-ui-react";
 
 export const publications = [
@@ -177,6 +176,8 @@ export const publicationElement = (publication, i) => {
         </Header>
       );
       return el;
+    default:
+      return null;
   }
 };
 
