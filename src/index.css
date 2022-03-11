@@ -36,7 +36,9 @@ h6 {
   font-size: 8pt;
   letter-spacing: 0.2em;
 }
-
+.header--bold {
+  font-weight: 900 !important;
+}
 p {
   letter-spacing: 0.2em;
   color: #3c3b3b;
@@ -67,7 +69,7 @@ p {
 
 .item:first-child {
   font-family: "Raleway", Helvetica, sans-serif !important;
-  font-weight: 800 !important;
+  font-weight: 900 !important;
   letter-spacing: 0.5em !important;
   line-height: 1.65;
   font-size: 0.9rem;
@@ -175,6 +177,7 @@ a.ui.ui:hover:not(.disabled__link) {
 .sidebar__about {
   gap: 1em;
   max-width: 90%;
+  font-weight: 900 !important;
 }
 
 .sub.sub.header {

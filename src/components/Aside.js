@@ -13,7 +13,7 @@ export const Aside = () => {
         />
       </Grid.Row>
       <Grid.Row>
-        <Header as="h3">
+        <Header as="h3" className="header--bold">
           Maria (Masha) Kostromitina
           <Header.Subheader>
             <a className={"ui"} href={"mailto:masha.kostromitina@gmail.com"}>

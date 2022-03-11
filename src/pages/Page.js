@@ -4,7 +4,9 @@ export const Page = (props) => {
   return (
     <>
       <Container fluid>
-        <Header as="h3">{props.title}</Header>
+        <Header as="h4" className="header--bold">
+          {props.title}
+        </Header>
         <hr style={{ marginBottom: "2rem" }}></hr>
 
         {props.content}
