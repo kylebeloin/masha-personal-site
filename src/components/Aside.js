@@ -15,7 +15,11 @@ export const Aside = () => {
       <Grid.Row>
         <Header as="h3">
           Masha Kostromitina
-          <Header.Subheader>masha.kostromitina@gmail.com</Header.Subheader>
+          <Header.Subheader>
+            <a className={"ui"} href={"mailto:masha.kostromitina@gmail.com"}>
+              masha.kostromitina@gmail.com
+            </a>
+          </Header.Subheader>
         </Header>
       </Grid.Row>
       <hr className="sidebar__hr" />

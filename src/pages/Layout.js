@@ -1,12 +1,14 @@
 import { Container, Grid, Sidebar, Menu } from "semantic-ui-react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Navbar, items } from "../components/Navbar";
 import Aside from "../components/Aside";
 
 export default function Layout() {
   const [visible, setVisible] = useState(false);
+  const location = useLocation();
 
+  console.log(location.pathname.split("/"));
   const handleClick = (e) => {
     e.preventDefault();
 
@@ -23,7 +25,7 @@ export default function Layout() {
       <Sidebar
         className={"sidenav__container"}
         as={Menu}
-        items={items}
+        items={items(location.pathname)}
         visible={visible}
         vertical
         animation="overlay"

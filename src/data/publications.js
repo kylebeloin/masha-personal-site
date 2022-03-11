@@ -1,4 +1,4 @@
-import { Header } from "semantic-ui-react";
+import { Header, Accordion, Segment } from "semantic-ui-react";
 
 export const publications = [
   {
@@ -114,9 +114,23 @@ export const publications = [
 ];
 
 export const publicationElement = (publication, i) => {
+  let panes;
   let el;
   switch (publication?.type) {
     case "journal":
+      panes = [
+        {
+          key: `details-${i}`,
+          title: "More Details",
+          content: {
+            content: (
+              <Segment basic style={{ padding: "0 1em" }}>
+                <p>{publication.data.title}</p>
+              </Segment>
+            ),
+          },
+        },
+      ];
       el = (
         <Header key={`pub-container-${i}`} size="small">
           <Header
@@ -138,10 +152,13 @@ export const publicationElement = (publication, i) => {
           </Header>
 
           <Header.Subheader>
-            {publication.authors.reduce((prev, curr, i) => {
-              return i === 0 ? curr : prev + ", " + curr;
-            })}
-            {<p>({publication.year})</p>}
+            <p style={{ marginBottom: "0" }}>
+              {publication.authors.reduce((prev, curr, i) => {
+                return i === 0 ? curr : prev + ", " + curr;
+              })}{" "}
+              ({publication.year})
+            </p>
+            <Accordion panels={panes} />
           </Header.Subheader>
         </Header>
       );
