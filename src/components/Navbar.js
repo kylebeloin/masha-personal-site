@@ -5,21 +5,23 @@ import { Icon, Menu } from "semantic-ui-react";
 import withRouter from "./withRouter";
 import { routes } from "../routes";
 
-export const items = [
-  ...routes.map((e, i) => ({
-    key: e.name,
-    name: e.name,
-    as: NavLink,
-    to: `/${e.path}`,
-    className: "menu__item--background",
-  })),
-];
+export const items = (pathname) => {
+  return [
+    ...routes.map((e, i) => ({
+      key: e.name,
+      name: e.name,
+      as: NavLink,
+      to: `/${e.path}`,
+      active: pathname === `/${e.path}`,
+      className: "menu__item--background",
+    })),
+  ];
+};
 
 export const Navbar = (props) => {
   const visible = props.visible;
   const setVisible = props.handleClick;
   const location = useLocation();
-  console.log(location);
   const sideNav = {
     key: "sidenav",
     onClick: setVisible,
@@ -40,7 +42,7 @@ export const Navbar = (props) => {
       id="menu__container"
       className="menu__container--background"
       fixed="top"
-      items={[...items, sideNav]}
+      items={[...items(location.pathname), sideNav]}
     />
   );
 };
