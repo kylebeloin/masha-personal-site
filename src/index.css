@@ -203,6 +203,23 @@ a.ui.ui:hover:not(.disabled__link) {
   margin: 0 !important;
 }
 
+.accordian__overflow > .sub.header.title {
+  padding: 0;
+  width: fit-content;
+}
+
+.accordian__overflow > .sub.header.title > span:before {
+  content: "Show More ";
+}
+
+.accordian__overflow > .sub.header.title.active > span:before {
+  content: "Hide ";
+}
+
+.accordian__overflow > .sub.header.title.active > i:before {
+  content: "\f077";
+}
+
 @media (max-width: 768px) {
   .main.main {
     padding-right: 0 !important;

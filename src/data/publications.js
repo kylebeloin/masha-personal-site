@@ -183,7 +183,7 @@ export const publicationElement = (publication, i) => {
               {publication.authors.reduce((prev, curr, i) => {
                 return i === 0 ? curr : prev + ", " + curr;
               })}{" "}
-              ({publication.year})
+              <span class="year--emphasis">({publication.year})</span>
             </p>
           </Header.Subheader>
           <Header
@@ -241,7 +241,9 @@ export const publicationElement = (publication, i) => {
                       <p>{publication.data.in}</p>
                     </Grid.Column>
                   </Grid.Row>
-                  <Grid.Row style={{ flexDirection: "column" }}>
+                  <Grid.Row
+                    style={{ flexDirection: "column", paddingTop: "0" }}
+                  >
                     <Grid.Column style={{ width: "fit-content" }}>
                       <p style={{ fontWeight: "800" }}>Publisher:</p>
                     </Grid.Column>

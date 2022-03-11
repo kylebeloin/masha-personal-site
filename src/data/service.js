@@ -34,7 +34,8 @@ export const serviceElement = (service, i) => {
     <Header key={`service-container-${i}`} size="small">
       <Header.Subheader style={{ marginBottom: "0" }}>
         <p style={{ marginBottom: "0" }}>
-          {service.organization} ({service.year})
+          {service.organization}{" "}
+          <span class="year--emphasis">({service.year})</span>
         </p>
       </Header.Subheader>
       <Header

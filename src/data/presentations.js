@@ -200,7 +200,8 @@ export const presentationElement = (presentation, i) => {
     <Header key={`presentation-container-${i}`} size="small">
       <Header.Subheader>
         <p style={{ marginBottom: "0" }}>
-          {presentation.conference} ({presentation.year})
+          {presentation.conference}{" "}
+          <span class="year--emphasis">({presentation.year})</span>
         </p>
       </Header.Subheader>
       <Header

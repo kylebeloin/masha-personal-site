@@ -1,4 +1,4 @@
-import { List, Header, Accordion } from "semantic-ui-react";
+import { List, Header, Accordion, Segment } from "semantic-ui-react";
 
 export const experience = [
   {
@@ -194,16 +194,18 @@ export const experienceElement = (experience, i) => {
   let panes = [
     {
       key: `experience-responsibilities-${i}`,
-      title: "View Details",
+      title: "Responsibilities",
       content: {
         content: (
-          <List as={"ul"}>
-            {experience.responsibilities.map((responsibility, x) => (
-              <List.Item key={`responsibilities-${i}-${x}`} as="li">
-                <p>{responsibility}</p>
-              </List.Item>
-            ))}
-          </List>
+          <Segment basic style={{ padding: "0 1em" }}>
+            <List as={"ul"}>
+              {experience.responsibilities.map((responsibility, x) => (
+                <List.Item key={`responsibilities-${i}-${x}`} as="li">
+                  <p>{responsibility}</p>
+                </List.Item>
+              ))}
+            </List>
+          </Segment>
         ),
       },
     },
@@ -212,7 +214,8 @@ export const experienceElement = (experience, i) => {
     <Header key={`experience-container-${i}`} size="small">
       <Header.Subheader>
         <p style={{ marginBottom: "0" }}>
-          {experience.role} ({experience.active})
+          {experience.role}{" "}
+          <span class="year--emphasis">({experience.active})</span>
         </p>
       </Header.Subheader>
       <Header

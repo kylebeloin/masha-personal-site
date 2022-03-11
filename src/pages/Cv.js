@@ -47,12 +47,17 @@ export const Cv = () => {
       {sections.map((section, i) => {
         let panels = false;
 
-        if (section.elements.length > 3) {
-          const last = section.elements.slice(3);
+        if (section.elements.length > 6) {
+          const last = section.elements.slice(6);
           panels = [
             {
               key: `${section.title}-${i}-panes`,
-              title: `See More ( ${last.length} )`,
+              title: {
+                style: { margin: "auto" },
+                as: Header.Subheader,
+                icon: "chevron down",
+                content: <span>( {last.length} )</span>,
+              },
               content: last,
             },
           ];
@@ -66,8 +71,9 @@ export const Cv = () => {
             </Divider>
             {panels ? (
               <>
-                {section.elements.slice(0, 3)}{" "}
+                {section.elements.slice(0, 6)}{" "}
                 <Accordion
+                  className={"accordian__overflow"}
                   key={`${section.title}-${i}-accordian`}
                   panels={panels}
                 />
