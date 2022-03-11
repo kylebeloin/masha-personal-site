@@ -1,6 +1,5 @@
 import Page from "./Page";
 import Social from "../components/Social";
-import { Segment } from "semantic-ui-react";
 
 export const Contact = () => {
   const title = "Contact";

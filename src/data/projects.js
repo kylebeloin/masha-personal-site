@@ -44,13 +44,8 @@ export const projectCards = () => {
                       size="medium"
                     />
                   </Grid.Column>{" "}
-                  <Grid.Column vertical computer={10} tablet={10} mobile={14}>
-                    <Segment
-                      compact
-                      vertical="center"
-                      basic
-                      key={`card-container-${i}`}
-                    >
+                  <Grid.Column computer={10} tablet={10} mobile={14}>
+                    <Segment compact basic key={`card-container-${i}`}>
                       <Card.Meta>{project.meta}</Card.Meta>
                       <Card.Content>{project.description}</Card.Content>
                     </Segment>
@@ -58,13 +53,8 @@ export const projectCards = () => {
                 </>
               ) : (
                 <>
-                  <Grid.Column vertical width={14}>
-                    <Segment
-                      compact
-                      vertical="center"
-                      basic
-                      key={`card-container-${i}`}
-                    >
+                  <Grid.Column width={14}>
+                    <Segment compact basic key={`card-container-${i}`}>
                       <Card.Meta>{project.meta}</Card.Meta>
                       <Card.Content>{project.description}</Card.Content>
                     </Segment>
