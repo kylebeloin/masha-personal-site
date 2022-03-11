@@ -14,7 +14,7 @@ export const Aside = () => {
       </Grid.Row>
       <Grid.Row>
         <Header as="h3">
-          Masha Kostromitina
+          Maria (Masha) Kostromitina
           <Header.Subheader>
             <a className={"ui"} href={"mailto:masha.kostromitina@gmail.com"}>
               masha.kostromitina@gmail.com
