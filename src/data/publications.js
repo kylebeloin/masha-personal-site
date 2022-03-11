@@ -4,6 +4,43 @@ export const publications = [
   {
     title: {
       primary:
+        "An Exploratory Study of Intonation Variation in L1 and L2 English Speakers' Pragmatic Production of High Imposition Requests and Refusals",
+      secondary: "",
+    },
+    authors: ["Kostromitina, M."],
+    year: "in press",
+    type: "journal",
+
+    data: {
+      title: "Applied Pragmatics",
+      volume: "",
+      number: "",
+      page: "",
+      link: "",
+      keywords: [],
+    },
+    abstract: "",
+  },
+  {
+    title: {
+      primary: "Prosody and Pragmatics in Applied Linguistics",
+      secondary: "",
+    },
+    authors: ["Kostromitina, M., Kermad, A."],
+    year: "in preperation",
+    type: "chapter",
+
+    data: {
+      in: "The Encyclopedia of Applied Linguistics",
+      editors: ["C. Chapelle"],
+      publisher: "Wiley",
+      city: "",
+    },
+    abstract: "Coming soon...",
+  },
+  {
+    title: {
+      primary:
         '"His lack of a mask ruined everything." Restaurant customer satisfaction during the COVID-19 outbreak',
       secondary: "An analysis of Yelp review texts and star-ratings",
     },
@@ -127,17 +164,6 @@ export const publicationElement = (publication, i) => {
   switch (publication?.type) {
     case "journal":
       panes = [
-        // {
-        //   key: `details-${i}`,
-        //   title: "More Details",
-        //   content: {
-        //     content: (
-        //       <Segment basic style={{ padding: "0 1em" }}>
-        //         <p>{publication.data.title}</p>
-        //       </Segment>
-        //     ),
-        //   },
-        // },
         {
           key: `abstract-${i}`,
           title: "View Abstract",
@@ -163,7 +189,7 @@ export const publicationElement = (publication, i) => {
           <Header
             key={`pub-title-${i}`}
             className={`publications__link ${
-              !(publication.data.link !== "") && "disabled"
+              !(publication.data.link !== "") && "disabled__link"
             }`}
             size="tiny"
             as={"a"}
@@ -212,7 +238,7 @@ export const publicationElement = (publication, i) => {
                       <p style={{ fontWeight: "800" }}>Book:</p>
                     </Grid.Column>
                     <Grid.Column width={14}>
-                      <p>{publication.data.title}</p>
+                      <p>{publication.data.in}</p>
                     </Grid.Column>
                   </Grid.Row>
                   <Grid.Row style={{ flexDirection: "column" }}>
