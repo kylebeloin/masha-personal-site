@@ -1,10 +1,8 @@
 import Page from "./Page";
 
-import projectCards from "../data/projects";
-
 export const Projects = () => {
   const title = "Projects";
-  const content = <>{projectCards()}</>;
+  const content = <>{"Coming soon..."}</>;
   return <Page {...{ title, content }} />;
 };
 

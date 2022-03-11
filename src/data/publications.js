@@ -19,7 +19,7 @@ export const publications = [
       link: "",
       keywords: [],
     },
-    abstract: "",
+    abstract: "Coming soon...",
   },
   {
     title: {

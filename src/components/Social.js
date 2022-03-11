@@ -3,7 +3,7 @@ import { Icon } from "semantic-ui-react";
 export const Social = () => {
   return (
     <div>
-      <a href={"mailto:masha.kostromitina@gmail.com"}>
+      <a href={"mailto:masha@nau.edu"}>
         <Icon link circular name="mail" />
       </a>
       <a href={"https://twitter.com/mashakostromit2"}>
