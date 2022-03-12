@@ -17,7 +17,7 @@ export const Aside = () => {
         <Header as="h3" className="header--bold">
           Maria (Masha) Kostromitina
           <Header.Subheader>
-            <a className={"ui"} href={"mailto:masha.kostromitina@gmail.com"}>
+            <a className={"ui"} href={"mailto:masha@nau.edu"}>
               masha.kostromitina@gmail.com
             </a>
           </Header.Subheader>
