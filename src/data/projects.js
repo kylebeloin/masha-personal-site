@@ -5,36 +5,14 @@ const projects = [
     // If true, card animates on hover. Set an "href: [link]" property on this card to link.
 
     // Label at bottom of card (Header)
-    title: "Title 1",
+    title: "Coming Soon...",
     // Primary text on card
-    description:
-      "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
+    description: "",
     // Appears in grey at top of card
     role: "",
     principal: "",
     collaborators: "",
     className: "projects__card",
-  },
-  {
-    link: true,
-    title: "Title 2",
-    description:
-      "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.",
-    role: "",
-    principal: "",
-    collaborators: "",
-    className: "projects__card",
-  },
-  {
-    link: true,
-    title: "Title 3",
-    description:
-      "Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada. Donec rutrum congue leo eget malesuada.",
-    role: "",
-    principal: "",
-    className: "projects__card",
-    collaborators: "",
-    image: "/images/placeholder.png",
   },
 ];
 
