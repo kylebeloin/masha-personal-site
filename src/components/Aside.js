@@ -8,7 +8,8 @@ export const Aside = () => {
     <Grid className={"sidebar__container"}>
       <Grid.Row className={"sidebar__profile"}>
         <Image
-          size="small"
+          style={{ maxWidth: "215px" }}
+          size="medium"
           src={process.env.PUBLIC_URL + "/images/profile.jpeg"}
         />
       </Grid.Row>
