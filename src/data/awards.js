@@ -33,7 +33,7 @@ export const awardElement = (award, i) => {
     <Header key={`award-container-${i}`} size="small">
       <Header.Subheader style={{ marginBottom: "0" }}>
         <p style={{ marginBottom: "0" }}>
-          {award.by} <span class="year--emphasis">({award.year})</span>
+          {award.by} <span className="year--emphasis">({award.year})</span>
         </p>
       </Header.Subheader>
       <Header

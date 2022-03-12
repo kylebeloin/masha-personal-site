@@ -35,7 +35,7 @@ export const serviceElement = (service, i) => {
       <Header.Subheader style={{ marginBottom: "0" }}>
         <p style={{ marginBottom: "0" }}>
           {service.organization}{" "}
-          <span class="year--emphasis">({service.year})</span>
+          <span className="year--emphasis">({service.year})</span>
         </p>
       </Header.Subheader>
       <Header

@@ -35,7 +35,7 @@ export const educationElement = (education, i) => {
           }}
         >
           {education.school}{" "}
-          <span class="year--emphasis">({education.graduated})</span>
+          <span className="year--emphasis">({education.graduated})</span>
         </p>
       </Header.Subheader>
       <Header

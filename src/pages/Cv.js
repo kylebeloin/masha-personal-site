@@ -5,10 +5,29 @@ import { education, educationElement } from "../data/education";
 import { presentations, presentationElement } from "../data/presentations";
 import { publications, publicationElement } from "../data/publications";
 import { experience, experienceElement } from "../data/experience";
-import { Divider, Header, Accordion } from "semantic-ui-react";
+import { Divider, Header, Accordion, Icon } from "semantic-ui-react";
 
 export const Cv = () => {
-  const title = "Curriculum Vitae";
+  const title = (
+    <>
+      "Curriculum Vitae"{" "}
+      <a
+        href="https://kostromitina.s3.us-east-2.amazonaws.com/kostromitina_cv_03112022.pdf"
+        title={"Download Curriculum Vitae"}
+        aria-label="link"
+        target={"_blank"}
+        rel="noreferrer"
+      >
+        <Icon
+          color="black"
+          style={{ float: "right" }}
+          link
+          size="large"
+          name="file pdf"
+        />
+      </a>
+    </>
+  );
   const research = experience
     .filter((experience, i) => experience.category === "Research")
     .at(0);

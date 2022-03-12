@@ -215,7 +215,7 @@ export const experienceElement = (experience, i) => {
       <Header.Subheader>
         <p style={{ marginBottom: "0" }}>
           {experience.role}{" "}
-          <span class="year--emphasis">({experience.active})</span>
+          <span className="year--emphasis">({experience.active})</span>
         </p>
       </Header.Subheader>
       <Header

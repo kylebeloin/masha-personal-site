@@ -201,7 +201,7 @@ export const presentationElement = (presentation, i) => {
       <Header.Subheader>
         <p style={{ marginBottom: "0" }}>
           {presentation.conference}{" "}
-          <span class="year--emphasis">({presentation.year})</span>
+          <span className="year--emphasis">({presentation.year})</span>
         </p>
       </Header.Subheader>
       <Header

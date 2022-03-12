@@ -183,7 +183,7 @@ export const publicationElement = (publication, i) => {
               {publication.authors.reduce((prev, curr, i) => {
                 return i === 0 ? curr : prev + ", " + curr;
               })}{" "}
-              <span class="year--emphasis">({publication.year})</span>
+              <span className="year--emphasis">({publication.year})</span>
             </p>
           </Header.Subheader>
           <Header

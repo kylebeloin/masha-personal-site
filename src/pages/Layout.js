@@ -8,7 +8,6 @@ export default function Layout() {
   const [visible, setVisible] = useState(false);
   const location = useLocation();
 
-  console.log(location.pathname.split("/"));
   const handleClick = (e) => {
     e.preventDefault();
 
