@@ -132,7 +132,7 @@ a.ui.ui:hover:not(.disabled__link) {
   margin-bottom: 0 !important;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1em;
+  gap: 1.5em;
 }
 .main__left,
 .main__right {
@@ -156,6 +156,10 @@ a.ui.ui:hover:not(.disabled__link) {
   color: inherit;
 }
 
+.sidebar__info {
+  margin-top: 0 !important;
+}
+
 .sidebar__container {
   display: flex;
   height: 100%;
@@ -168,12 +172,14 @@ a.ui.ui:hover:not(.disabled__link) {
 }
 
 .sidebar__hr {
-  width: 50%;
+  width: 75%;
+  margin: 1.5rem 0;
 }
 
 .sidebar__profile {
   height: fit-content;
   padding: 0 !important;
+  gap: 1.5rem;
 }
 
 .sidebar__profile > img {
@@ -228,6 +234,12 @@ a.ui.ui:hover:not(.disabled__link) {
   content: "\f077";
 }
 
+@media (max-width: 410px) {
+  .sidebar__column.sidebar__column.sidebar__column {
+    align-items: center;
+  }
+}
+
 @media (max-width: 854px) {
   .menu__item--sidenav {
     display: block !important;
@@ -266,9 +278,24 @@ a.ui.ui:hover:not(.disabled__link) {
   }
 }
 
+@media (max-width: 991px) {
+  .sidebar__info.sidebar__info {
+    margin-top: 0;
+
+    width: fit-content;
+    /* white-space: break-spaces; */
+    flex: 0.5 1.5 50%;
+  }
+}
+
 @media (min-device-width: 768px) and (max-width: 991px) {
   .main {
     padding-right: 2.5rem !important;
     padding-left: 2.5rem !important;
+  }
+
+  .main__left.main__left {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }

@@ -2,7 +2,7 @@ import { Icon } from "semantic-ui-react";
 
 export const Social = () => {
   return (
-    <>
+    <div>
       <a className={"social__link"} href={"mailto:masha@nau.edu"}>
         <Icon link circular name="mail" />
       </a>
@@ -18,7 +18,7 @@ export const Social = () => {
       >
         <Icon link circular name="instagram" />
       </a>
-    </>
+    </div>
   );
 };
 
