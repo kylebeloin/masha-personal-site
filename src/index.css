@@ -40,10 +40,8 @@ h6 {
   font-weight: 900 !important;
 }
 p {
-  letter-spacing: 0.2em;
   color: #3c3b3b;
-  font-size: 0.9em !important;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .item.item.item:not(.menu__item--sidenav) {
