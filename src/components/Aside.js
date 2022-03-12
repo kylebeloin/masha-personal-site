@@ -1,5 +1,4 @@
-import { Grid, Header, Image, Button } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { Grid, Header, Image } from "semantic-ui-react";
 import React from "react";
 import Social from "./Social";
 
