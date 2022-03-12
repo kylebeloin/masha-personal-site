@@ -1,4 +1,4 @@
-import { Card, Grid, Image, Header, Segment } from "semantic-ui-react";
+import { Card, Grid, Header, Segment } from "semantic-ui-react";
 
 const projects = [
   {
