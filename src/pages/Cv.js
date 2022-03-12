@@ -10,7 +10,7 @@ import { Divider, Header, Accordion, Icon } from "semantic-ui-react";
 export const Cv = () => {
   const title = (
     <>
-      "Curriculum Vitae"{" "}
+      Curriculum Vitae
       <a
         href="https://kostromitina.s3.us-east-2.amazonaws.com/kostromitina_cv_03112022.pdf"
         title={"Download Curriculum Vitae"}
@@ -18,13 +18,7 @@ export const Cv = () => {
         target={"_blank"}
         rel="noreferrer"
       >
-        <Icon
-          color="black"
-          style={{ float: "right" }}
-          link
-          size="large"
-          name="file pdf"
-        />
+        <Icon color="black" style={{ float: "right" }} link name="file pdf" />
       </a>
     </>
   );
