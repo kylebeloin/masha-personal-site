@@ -6,7 +6,12 @@ export const Contact = () => {
   const content = (
     <>
       <p>
-        If you would like to learn more about my research or collaborate on a project, the best way to reach me is through my email, masha@nau.edu. Looking forward to hearing from you soon!
+        If you would like to learn more about my research or collaborate on a
+        project, the best way to reach me is through my email,{"  "}
+        <a className={"ui"} href={"mailto:masha@nau.edu"}>
+          masha@nau.edu
+        </a>
+        . Looking forward to hearing from you soon!
       </p>
 
       <Social />

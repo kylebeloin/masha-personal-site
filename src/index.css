@@ -39,6 +39,12 @@ h6 {
 .header--bold {
   font-weight: 900 !important;
 }
+
+.project--bold.project--bold {
+  font-size: 14px !important;
+  line-height: 1;
+}
+
 p {
   color: #3c3b3b;
   font-weight: 400;
@@ -181,7 +187,7 @@ a.ui.ui:hover:not(.disabled__link) {
   font-weight: 900 !important;
 }
 
-.sub.sub.header {
+.sub.sub.header:not(.projects__text) {
   letter-spacing: 0.125em;
   font-size: 0.9rem !important;
 }
@@ -202,6 +208,7 @@ a.ui.ui:hover:not(.disabled__link) {
 }
 .projects__card__container {
   margin: 0 !important;
+  padding: 0.5em 0 1.5em 0 !important;
 }
 
 .accordian__overflow > .sub.header.title {

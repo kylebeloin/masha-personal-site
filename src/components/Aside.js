@@ -18,7 +18,7 @@ export const Aside = () => {
           Maria (Masha) Kostromitina
           <Header.Subheader>
             <a className={"ui"} href={"mailto:masha@nau.edu"}>
-              masha.kostromitina@gmail.com
+              masha@nau.edu
             </a>
           </Header.Subheader>
         </Header>

@@ -1,7 +1,7 @@
 import Page from "./Page";
 
 export const Home = () => {
-  const title = "Home";
+  const title = "Welcome!";
   const content = (
     <p>
       Thank you for visiting my website! If you would like to see my recent
