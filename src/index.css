@@ -223,28 +223,28 @@ a.ui.ui:hover:not(.disabled__link) {
   content: "\f077";
 }
 
+@media (max-width: 854px) {
+  .menu__item--sidenav {
+    display: block !important;
+  }
+
+  .sidenav__container {
+    display: unset !important;
+  }
+  #menu__container > .item:not(:first-child):not(.menu__item--sidenav) {
+    display: none !important;
+    position: relative;
+  }
+}
+
 @media (max-width: 768px) {
   .main.main {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
 
-  #menu__container > .item:not(:first-child):not(.menu__item--sidenav) {
-    display: none !important;
-    position: relative;
-  }
-
   h4.sidebar__about {
     text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .menu__item--sidenav {
-    display: block !important;
-  }
-  .sidenav__container {
-    display: unset !important;
   }
 
   .pusher
