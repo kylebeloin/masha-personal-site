@@ -234,9 +234,9 @@ a.ui.ui:hover:not(.disabled__link) {
   content: "\f077";
 }
 
-@media (max-width: 410px) {
-  .sidebar__column.sidebar__column.sidebar__column {
-    align-items: center;
+@media (max-width: 588px) {
+  .sidebar__column.sidebar__column.sidebar__column.sidebar__column.sidebar__column {
+    width: 100% !important;
   }
 }
 
