@@ -4,10 +4,9 @@ export const Home = () => {
   const title = "Home";
   const content = (
     <p>
-      Proin eget tortor risus. Donec rutrum congue leo eget malesuada.
-      Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia
-      eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia
-      eget consectetur sed, convallis at tellus.
+      Thank you for visiting my website! If you would like to see my recent work, please check out my <a className="ui" href={"https://www.mariakostromitina.com/publications"}>
+            Publications </a> page. You can also find my past and current research projects on the <a className="ui" href={"https://www.mariakostromitina.com/projects"}> Projects </a> page. You can visit the <a className="ui" href={"https://www.mariakostromitina.com/cv"}> CV </a> page to learn about my teaching experience as well as service and awards. 
+          </a>
     </p>
   );
 

@@ -6,8 +6,7 @@ export const Contact = () => {
   const content = (
     <>
       <p>
-        Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed
-        magna dictum porta. Donec rutrum congue leo eget malesuada.
+        If you would like to learn more about my research or collaborate on a project, the best way to reach me is through my email, masha@nau.edu. Looking forward to hearing from you soon!
       </p>
 
       <Social />
