@@ -30,6 +30,8 @@ export default function Layout() {
         vertical
         animation="overlay"
         direction="right"
+        onClick={handleClick}
+        onHide={() => setVisible(false)}
       />
       <Sidebar.Pushable>
         <Sidebar.Pusher>

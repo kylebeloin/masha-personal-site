@@ -2,14 +2,23 @@ import { Icon } from "semantic-ui-react";
 
 export const Social = () => {
   return (
-    <div>
-      <a href={"mailto:masha@nau.edu"}>
+    <>
+      <a className={"social__link"} href={"mailto:masha@nau.edu"}>
         <Icon link circular name="mail" />
       </a>
-      <a href={"https://twitter.com/mashakostromit2"}>
+      <a
+        className={"social__link"}
+        href={"https://twitter.com/mashakostromit2"}
+      >
         <Icon link circular name="twitter" />
       </a>
-    </div>
+      <a
+        className={"social__link"}
+        href={"https://www.instagram.com/mashie_mashie/"}
+      >
+        <Icon link circular name="instagram" />
+      </a>
+    </>
   );
 };
 

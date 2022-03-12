@@ -148,6 +148,10 @@ a.ui.ui:hover:not(.disabled__link) {
   padding: 3rem;
 }
 
+.social__link {
+  color: inherit;
+}
+
 .sidebar__container {
   display: flex;
   height: 100%;
@@ -176,7 +180,6 @@ a.ui.ui:hover:not(.disabled__link) {
 
 .sidebar__about {
   gap: 1em;
-  max-width: 90%;
   font-weight: 900 !important;
 }
 

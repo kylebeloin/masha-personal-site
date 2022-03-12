@@ -31,14 +31,16 @@ export const Aside = () => {
           content={"About"}
         />
         <p>
-          Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia
-          eget consectetur sed, convallis at tellus. Praesent sapien massa,
-          convallis a pellentesque nec, egestas non nisi.
+          PhD candidate in Applied Linguistics{" "}
+          <a className="ui" href={"https://twitter.com/NAU"}>
+            @NAU
+          </a>{" "}
+          researching L2 speech, pragmatics, and corpus linguistics | Language
+          learning addict | Cats and climbing💫 | (she/her)
         </p>
       </Grid.Row>
       <Grid.Row>
         <Button
-          style={{ marginBottom: "1rem" }}
           className={"button--text"}
           basic
           as={Link}
