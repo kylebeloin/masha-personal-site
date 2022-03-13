@@ -22,13 +22,13 @@ export const Cv = () => {
       </a>
     </>
   );
-  const research = experience
-    .filter((experience, i) => experience.category === "Research")
-    .at(0);
+  const research = experience.filter(
+    (experience, i) => experience.category === "Research"
+  )[0];
 
-  const teaching = experience
-    .filter((experience, i) => experience.category === "Teaching")
-    .at(0);
+  const teaching = experience.filter(
+    (experience, i) => experience.category === "Teaching"
+  )[0];
 
   const sections = [
     {
