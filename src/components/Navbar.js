@@ -25,12 +25,13 @@ export const Navbar = (props) => {
   const sideNav = {
     key: "sidenav",
     onClick: setVisible,
+    as: "div",
     active: visible,
     icon: true,
     content: visible ? (
-      <Icon fitted link name="cancel" />
+      <Icon fitted name="cancel" />
     ) : (
-      <Icon fitted link name="content" />
+      <Icon fitted name="content" />
     ),
     className: "menu__item--background menu__item--sidenav",
   };

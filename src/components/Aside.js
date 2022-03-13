@@ -23,7 +23,11 @@ export const Aside = () => {
               width: "min(200px, 100%)",
             }}
             size="medium"
+            title="Masha Kostromitina"
             src={process.env.PUBLIC_URL + "/images/profile.webp"}
+            alt={
+              "Masha smiling at the camera, sitting in an outdoor dining area."
+            }
           />
         </Grid.Column>
         <Grid.Column

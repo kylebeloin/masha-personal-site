@@ -63,6 +63,7 @@ p {
   font-weight: 100;
   margin-left: auto;
   display: none !important;
+  cursor: pointer;
 }
 
 .sidenav__container {
