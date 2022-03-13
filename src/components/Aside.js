@@ -23,7 +23,7 @@ export const Aside = () => {
               width: "min(200px, 100%)",
             }}
             size="medium"
-            src={process.env.PUBLIC_URL + "/images/profile.jpeg"}
+            src={process.env.PUBLIC_URL + "/images/profile.webp"}
           />
         </Grid.Column>
         <Grid.Column
