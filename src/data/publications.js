@@ -163,7 +163,6 @@ export const publications = [
 export const publicationElement = (publication, i) => {
   let panes;
   let el;
-  let section;
 
   switch (publication?.type) {
     case "journal":
