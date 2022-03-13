@@ -1,22 +1,11 @@
-import { List, Header, Accordion, Segment } from "semantic-ui-react";
+import { List, Header, Accordion, Segment, Label } from "semantic-ui-react";
 
 export const experience = [
   {
     category: "Teaching",
     data: [
       {
-        active: "2022",
-        employer: "Northern Arizona University",
-        location: "Flagstaff, AZ",
-        role: "Instructor",
-        title: { primary: "ENG 528, Introduction to Grammar", secondary: "" },
-        responsibilities: [
-          "Assisted in creating course materials and leading class sessions",
-          "Led review sessions for students in the class",
-          "Monitored and managed online students in the class",
-        ],
-      },
-      {
+        section: "Instructor",
         active: "2021",
         employer: "Northern Arizona University",
         location: "Flagstaff, AZ",
@@ -73,20 +62,6 @@ export const experience = [
         ],
       },
       {
-        active: "2016-2017",
-        employer: "Northern Arizona University",
-        location: "Flagstaff, AZ",
-        role: "Writing Assistant",
-        title: {
-          primary: "ENG 100, English Composition: Writing Center",
-          secondary: "University Writing Commons",
-        },
-        responsibilities: [
-          "Met with students one-on-one to work on their writing - Edited papers of students from various departments",
-          "Gave workshops on different aspects of the writing process (e.g., Outlining, paragraph structure, brainstorming)",
-        ],
-      },
-      {
         active: "2012-2015",
         employer: "School of Foreign Languages",
         location: "Penza, Russia",
@@ -103,6 +78,34 @@ export const experience = [
           "Led an English for academic purposes class",
           "Prepared students for TOEFL and IELTS",
           "Organized extracurricular activities",
+        ],
+      },
+      {
+        section: "Teaching Assistant",
+        active: "2022",
+        employer: "Northern Arizona University",
+        location: "Flagstaff, AZ",
+        role: "Teaching Assistant",
+        title: { primary: "ENG 528, Introduction to Grammar", secondary: "" },
+        responsibilities: [
+          "Assisted in creating course materials and leading class sessions",
+          "Led review sessions for students in the class",
+          "Monitored and managed online students in the class",
+        ],
+      },
+      {
+        section: "Writing Assistant",
+        active: "2016-2017",
+        employer: "Northern Arizona University",
+        location: "Flagstaff, AZ",
+        role: "Writing Assistant",
+        title: {
+          primary: "ENG 100, English Composition: Writing Center",
+          secondary: "University Writing Commons",
+        },
+        responsibilities: [
+          "Met with students one-on-one to work on their writing - Edited papers of students from various departments",
+          "Gave workshops on different aspects of the writing process (e.g., Outlining, paragraph structure, brainstorming)",
         ],
       },
     ],
@@ -247,5 +250,15 @@ export const experienceElement = (experience, i) => {
       </Header.Subheader>
     </Header>
   );
+  if (experience?.section !== undefined) {
+    el = (
+      <>
+        <Label color="red" ribbon>
+          {experience.section}
+        </Label>
+        {el}
+      </>
+    );
+  }
   return el;
 };

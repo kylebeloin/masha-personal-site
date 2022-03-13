@@ -1,4 +1,4 @@
-import { Header, Accordion, Segment, Grid } from "semantic-ui-react";
+import { Header, Accordion, Segment, Grid, Label } from "semantic-ui-react";
 
 export const publications = [
   {
@@ -10,7 +10,7 @@ export const publications = [
     authors: ["Kostromitina, M."],
     year: "in press",
     type: "journal",
-
+    section: "In Press",
     data: {
       title: "Applied Pragmatics",
       volume: "",
@@ -23,20 +23,19 @@ export const publications = [
   },
   {
     title: {
-      primary: "Prosody and Pragmatics in Applied Linguistics",
+      primary: "Individual learner characteristics and pragmatic competence",
       secondary: "",
     },
-    authors: ["Kostromitina, M., Kermad, A."],
-    year: "in preperation",
+    authors: ["Taguchi, N.", "Kostromitina, M.", "Wheeler, H."],
+    year: "in press",
     type: "chapter",
-
     data: {
-      in: "The Encyclopedia of Applied Linguistics",
-      editors: ["C. Chapelle"],
-      publisher: "Wiley",
+      title: "Individual learner characteristics and pragmatic competence",
+      in: "The Routledge Handbook of Second Language Acquisition and Individual Differences",
+      editors: ["S. Li", "P. Hiver", "M. Papi"],
+      publisher: "Routledge",
       city: "",
     },
-    abstract: "Coming soon...",
   },
   {
     title: {
@@ -47,7 +46,7 @@ export const publications = [
     authors: ["Kostromitina, M.", "Keller, D.", "Cavusoglu, M.", "Beloin, K"],
     year: "2021",
     type: "journal",
-
+    section: "Published",
     data: {
       title: "International Journal of Hospitality Management",
       volume: "98",
@@ -112,22 +111,7 @@ export const publications = [
     abstract:
       "Elicited imitation tasks (EITs) have been proposed and examined as a practical measure of second language (L2) proficiency. This study aimed to provide an updated and comprehensive view of the relationship between EITs and other proficiency measures. Toward that end, 46 reports were retrieved contributing 60 independent effect sizes (Pearson’s r) that were weighted and averaged. Several EIT features were also examined as potential moderators. The results portray EIT as a generally consistent measure of L2 proficiency (r = .66). Among other moderators, EIT stimuli length was positively associated with stronger correlations. Overall, the findings provide support for the use of EITs as a means to greater consistency and practicality in measuring L2 proficiency. In our Discussion section, we highlight the need for more transparent reporting and provide empirically grounded recommendations for EIT design and for further research into EIT development.",
   },
-  {
-    title: {
-      primary: "Individual learner characteristics and pragmatic competence",
-      secondary: "",
-    },
-    authors: ["Taguchi, N.", "Kostromitina, M.", "Wheeler, H."],
-    year: "in press",
-    type: "chapter",
-    data: {
-      title: "Individual learner characteristics and pragmatic competence",
-      in: "The Routledge Handbook of Second Language Acquisition and Individual Differences",
-      editors: ["S. Li", "P. Hiver", "M. Papi"],
-      publisher: "Routledge",
-      city: "",
-    },
-  },
+
   {
     title: {
       primary: "Characterizing non-chain restaurants' Yelp star-ratings",
@@ -156,11 +140,31 @@ export const publications = [
     abstract:
       "Previous research has established the importance of positive Yelp reviews for the success of independent, non-chain restaurant. While managers may assume that increasing customer satisfaction will increase star rating, previous research on determinants of satisfaction does not necessarily generalize to Yelp reviews or across Yelp star ratings. Accordingly, we used Multiple Correspondence Analysis with a representative sample of 54,000 reviews to investigate the criteria used by reviewers in their assignment of star-ratings to determine if different star-ratings are characterized by different criteria. Our findings confirm previous research showing the importance of service, food, and environment, but suggest these criteria matter differently at different star ratings. Based on these results, we offer suggestions for improving restaurants’ star-ratings: for 1 and 2-star restaurants, avoid long waits, for 3-star restaurants, focus on improving food quality, for 4 and 5-star restaurants, focus on creating a positive overall experience through service, food, and environmental factors.",
   },
+  {
+    title: {
+      primary: "Prosody and Pragmatics in Applied Linguistics",
+      secondary: "",
+    },
+    authors: ["Kostromitina, M., Kermad, A."],
+    section: "In Preperation",
+    year: "in preperation",
+    type: "chapter",
+
+    data: {
+      in: "The Encyclopedia of Applied Linguistics",
+      editors: ["C. Chapelle"],
+      publisher: "Wiley",
+      city: "",
+    },
+    abstract: "Coming soon...",
+  },
 ];
 
 export const publicationElement = (publication, i) => {
   let panes;
   let el;
+  let section;
+
   switch (publication?.type) {
     case "journal":
       panes = [
@@ -219,6 +223,17 @@ export const publicationElement = (publication, i) => {
           </Header.Subheader>
         </Header>
       );
+
+      if (publication?.section !== undefined) {
+        el = (
+          <>
+            <Label color="red" ribbon>
+              {publication.section}
+            </Label>
+            {el}
+          </>
+        );
+      }
       return el;
 
     case "chapter":
@@ -289,6 +304,16 @@ export const publicationElement = (publication, i) => {
           </Header.Subheader>
         </Header>
       );
+      if (publication?.section !== undefined) {
+        el = (
+          <>
+            <Label color="red" ribbon>
+              {publication.section}
+            </Label>
+            {el}
+          </>
+        );
+      }
       return el;
     default:
       return null;
