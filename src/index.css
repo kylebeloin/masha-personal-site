@@ -269,7 +269,7 @@ a.ui.ui:hover:not(.disabled__link) {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main.main {
     padding-right: 0 !important;
     padding-left: 0 !important;
