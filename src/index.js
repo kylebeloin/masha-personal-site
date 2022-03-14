@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
 
-serviceWorkerRegistration.register();
+serviceWorkerRegistration.unregister();
 
 const rootElement = document.getElementById("root");
 render(

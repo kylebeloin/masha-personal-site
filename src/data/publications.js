@@ -218,19 +218,19 @@ export const publicationElement = (publication, i) => {
               {publication.data.title}
             </p>
 
-            <Accordion panels={panes} />
+            <Accordion key={`pub-accordian-${i}`} panels={panes} />
           </Header.Subheader>
         </Header>
       );
 
       if (publication?.section !== undefined) {
         el = (
-          <>
+          <div key={`pub-${publication.section}-label`}>
             <Label color="red" ribbon>
               {publication.section}
             </Label>
             {el}
-          </>
+          </div>
         );
       }
       return el;
@@ -299,18 +299,18 @@ export const publicationElement = (publication, i) => {
               `: ${publication.title.secondary}`}
           </Header>
           <Header.Subheader key={`pub-authors-${i}`}>
-            <Accordion panels={panes} />
+            <Accordion key={`pub-accordian-${i}`} panels={panes} />
           </Header.Subheader>
         </Header>
       );
       if (publication?.section !== undefined) {
         el = (
-          <>
+          <div key={`pub-${publication.section}-label`}>
             <Label color="red" ribbon>
               {publication.section}
             </Label>
             {el}
-          </>
+          </div>
         );
       }
       return el;

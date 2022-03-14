@@ -252,12 +252,12 @@ export const experienceElement = (experience, i) => {
   );
   if (experience?.section !== undefined) {
     el = (
-      <>
+      <div key={`experience-${experience.section}-label`}>
         <Label color="red" ribbon>
           {experience.section}
         </Label>
         {el}
-      </>
+      </div>
     );
   }
   return el;

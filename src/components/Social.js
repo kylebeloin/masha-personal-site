@@ -2,7 +2,7 @@ import { Icon } from "semantic-ui-react";
 
 export const Social = () => {
   return (
-    <div>
+    <div className="mobile-centered">
       <a title="email" className={"social__link"} href={"mailto:masha@nau.edu"}>
         <Icon alt="email" link circular name="mail" />
       </a>

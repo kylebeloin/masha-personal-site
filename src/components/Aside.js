@@ -17,11 +17,7 @@ export const Aside = () => {
           }}
         >
           <Image
-            style={{
-              minWidth: "175px",
-
-              width: "min(200px, 100%)",
-            }}
+            className="sidebar__image mobile-centered"
             size="medium"
             title="Masha Kostromitina"
             src={process.env.PUBLIC_URL + "/images/profile.webp"}
@@ -36,7 +32,10 @@ export const Aside = () => {
           mobile={10}
           className={"sidebar__column"}
         >
-          <Header as="h3" className="header--bold sidebar__info">
+          <Header
+            as="h3"
+            className="header--bold sidebar__info mobile-centered"
+          >
             Maria (Masha) Kostromitina
             <Header.Subheader>
               <a className={"ui"} href={"mailto:masha@nau.edu"}>
@@ -44,11 +43,11 @@ export const Aside = () => {
               </a>
             </Header.Subheader>
           </Header>
-          <hr className="sidebar__hr" />
+          <hr className="sidebar__hr mobile-centered" />
           <Header
             textAlign="left"
             as="h4"
-            className="sidebar__about"
+            className="sidebar__about "
             content={"About"}
           />
           <p>
@@ -61,7 +60,7 @@ export const Aside = () => {
           </p>
 
           <Social />
-          <hr className="sidebar__hr" />
+          <hr className="sidebar__hr mobile-centered" />
         </Grid.Column>
       </Grid.Row>
     </Grid>

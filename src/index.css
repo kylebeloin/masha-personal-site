@@ -194,6 +194,13 @@ a.ui.ui:hover:not(.disabled__link) {
   font-weight: 900 !important;
 }
 
+.sidebar__image {
+  width: min(200px, 100%) !important;
+  border-radius: 1%;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15) !important;
+  border: 0.5px solid rgba(34, 36, 38, 0.15) !important;
+}
+
 .sub.sub.header:not(.projects__text) {
   letter-spacing: 0.125em;
   font-size: 0.9rem !important;
@@ -238,6 +245,12 @@ a.ui.ui:hover:not(.disabled__link) {
 @media (max-width: 588px) {
   .sidebar__column.sidebar__column.sidebar__column.sidebar__column.sidebar__column {
     width: 100% !important;
+  }
+
+  .mobile-centered {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
   }
 }
 
