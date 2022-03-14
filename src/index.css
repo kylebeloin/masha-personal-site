@@ -246,15 +246,13 @@ a.ui.ui:hover:not(.disabled__link) {
   .sidebar__column.sidebar__column.sidebar__column.sidebar__column.sidebar__column {
     width: 100% !important;
   }
-}
-
-@media (max-width: 619px) {
   .mobile-centered {
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: center !important;
   }
 }
+
 @media (max-width: 854px) {
   .menu__item--sidenav {
     display: block !important;
