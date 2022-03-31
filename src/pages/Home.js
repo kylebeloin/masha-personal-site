@@ -9,11 +9,13 @@ export const Home = () => {
       <a className="ui" href={"/publications"}>
         Publications
       </a>{" "}
-      page. You can also find my past and current research projects on the{" "}
+      page.{" "}
+      {/* You can also find my past and current research projects on the{" "}
       <a className="ui" href={"/projects"}>
         Projects
       </a>{" "}
-      page. You can visit the{" "}
+      page.  */}
+      You can visit the{" "}
       <a className="ui" href={"/cv"}>
         CV
       </a>{" "}
