@@ -3,7 +3,7 @@ import About from "./pages/About";
 import Cv from "./pages/Cv";
 import Contact from "./pages/Contact";
 import Publications from "./pages/Publications";
-import Projects from "./pages/Projects";
+// import Projects from "./pages/Projects";
 
 export const routes = [
   { name: "Masha Kostromitina", path: "", element: Home },
