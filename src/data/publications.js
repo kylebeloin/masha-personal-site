@@ -27,8 +27,9 @@ export const publications = [
       secondary: "",
     },
     authors: ["Taguchi, N.", "Kostromitina, M.", "Wheeler, H."],
-    year: "in press",
+    year: "2022",
     type: "chapter",
+    section: "Published",
     data: {
       title: "Individual learner characteristics and pragmatic competence",
       in: "The Routledge Handbook of Second Language Acquisition and Individual Differences",
@@ -46,7 +47,7 @@ export const publications = [
     authors: ["Kostromitina, M.", "Keller, D.", "Cavusoglu, M.", "Beloin, K"],
     year: "2021",
     type: "journal",
-    section: "Published",
+    
     data: {
       title: "International Journal of Hospitality Management",
       volume: "98",
@@ -65,6 +66,7 @@ export const publications = [
     abstract:
       "The aim of the study was to provide practical advice to restaurant managers for improving star ratings as well as information for researchers on how the pandemic has impacted established determinants of satisfaction. The study examined criteria used by restaurant customers in assigning star-ratings on Yelp during the COVID-19 pandemic using keyword analysis and Multiple Correspondence Analysis. In evaluating restaurants, the reviewers focused on service, overall experience, and food quality. Service was discussed in relation to the pandemic and included safety of the dine-in experience, contrasted with take-out options and compliance with COVID-19 guidelines. These criteria applied differently with lower-star reviews focusing on safety, social distancing, and mask policies. Higher-star reviews focused on take-out/delivery services, high-quality food, and an overall positive experience. The study provides valuable contributions to our understanding of how the COVID-19 pandemic will impact the restaurant sector in a post-pandemic world.",
   },
+  
   {
     title: {
       primary:
