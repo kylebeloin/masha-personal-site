@@ -36,6 +36,8 @@ export const publications = [
       editors: ["S. Li", "P. Hiver", "M. Papi"],
       publisher: "Routledge",
       city: "",
+      description:
+        "This chapter presents a systematic review of empirical studies that examined the impact of individual learner characteristics on pragmatic competence and development. The goal of the chapter is two-fold: 1) to describe and critically analyze empirical practices in the domain of individual learner characteristics in L2 pragmatics, and 2) to examine the overall effects of a select learner characteristic (i.e., proficiency) on pragmatic competence. The first goal is pursued using a scoping review that surveys existing studies in terms of their quantity, range, and characteristics (e.g., research designs and reporting practices). The second goal is addressed by adopting a small-scale meta-analysis focusing on proficiency as a learner characteristic.",
     },
   },
   {
@@ -47,7 +49,7 @@ export const publications = [
     authors: ["Kostromitina, M.", "Keller, D.", "Cavusoglu, M.", "Beloin, K"],
     year: "2021",
     type: "journal",
-    
+
     data: {
       title: "International Journal of Hospitality Management",
       volume: "98",
@@ -66,7 +68,7 @@ export const publications = [
     abstract:
       "The aim of the study was to provide practical advice to restaurant managers for improving star ratings as well as information for researchers on how the pandemic has impacted established determinants of satisfaction. The study examined criteria used by restaurant customers in assigning star-ratings on Yelp during the COVID-19 pandemic using keyword analysis and Multiple Correspondence Analysis. In evaluating restaurants, the reviewers focused on service, overall experience, and food quality. Service was discussed in relation to the pandemic and included safety of the dine-in experience, contrasted with take-out options and compliance with COVID-19 guidelines. These criteria applied differently with lower-star reviews focusing on safety, social distancing, and mask policies. Higher-star reviews focused on take-out/delivery services, high-quality food, and an overall positive experience. The study provides valuable contributions to our understanding of how the COVID-19 pandemic will impact the restaurant sector in a post-pandemic world.",
   },
-  
+
   {
     title: {
       primary:
@@ -265,6 +267,16 @@ export const publicationElement = (publication, i) => {
                     </Grid.Column>
                     <Grid.Column width={14}>
                       <p>{publication.data.publisher}</p>
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row
+                    style={{ flexDirection: "column", paddingTop: "0" }}
+                  >
+                    <Grid.Column style={{ width: "fit-content" }}>
+                      <p style={{ fontWeight: "800" }}>Description:</p>
+                    </Grid.Column>
+                    <Grid.Column width={14}>
+                      <p>{publication.data?.description || ""}</p>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
