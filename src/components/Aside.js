@@ -20,6 +20,8 @@ export const Aside = () => {
             className="sidebar__image mobile-centered"
             size="medium"
             title="Masha Kostromitina"
+            width="199"
+            height="240"
             src={process.env.PUBLIC_URL + "/images/profile.webp"}
             alt={
               "Masha smiling at the camera, sitting in an outdoor dining area."
