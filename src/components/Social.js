@@ -8,7 +8,7 @@ export const Social = () => {
       </a>
       <a
         className={"social__link"}
-        href={"https://twitter.com/mashakostromit2"}
+        href={"https://twitter.com/mashalinguist"}
         title="twitter"
       >
         <Icon alt="twitter" link circular name="twitter" />
