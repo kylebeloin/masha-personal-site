@@ -46,19 +46,13 @@ export const Aside = () => {
             </Header.Subheader>
           </Header>
           <hr className="sidebar__hr mobile-centered" />
-          <Header
-            textAlign="left"
-            as="h4"
-            className="sidebar__about "
-            content={"About"}
-          />
           <p>
             PhD candidate in Applied Linguistics{" "}
             <a className="ui" href={"https://twitter.com/NAU"}>
               @NAU
             </a>{" "}
             researching L2 speech, pragmatics, and corpus linguistics | Language
-            learning addict | Cats and climbing💫 | (she/her)
+            learning addict | Cats and climbing | (she/her)
           </p>
 
           <Social />

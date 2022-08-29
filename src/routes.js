@@ -1,8 +1,8 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Cv from "./pages/Cv";
-import Contact from "./pages/Contact";
 import Publications from "./pages/Publications";
+// import Dissertation from "./pages/Dissertation";
 // import Projects from "./pages/Projects";
 
 export const routes = [
@@ -10,8 +10,8 @@ export const routes = [
   { name: "About", path: "about", element: About },
   // { name: "Projects", path: "projects", element: Projects },
   { name: "Publications", path: "publications", element: Publications },
-  { name: "Curriculum Vitæ", path: "cv", element: Cv },
-  { name: "Contact", path: "contact", element: Contact },
+  { name: "CV", path: "cv", element: Cv },
+  // { name: "Dissertation", path: "dissertation", element: Dissertation },
 ];
 
 export default routes;
