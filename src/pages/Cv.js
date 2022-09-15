@@ -12,7 +12,7 @@ export const Cv = () => {
     <>
       Curriculum Vitae
       <a
-        href="https://kostromitina.s3.us-east-2.amazonaws.com/kostromitina_cv_03112022.pdf"
+        href="https://kostromitina.s3.us-east-2.amazonaws.com/kostromitina_cv_14092022.pdf"
         title={"Download Curriculum Vitae"}
         aria-label="link"
         target={"_blank"}

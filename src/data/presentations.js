@@ -28,8 +28,7 @@ export const presentations = [
   {
     year: "2021",
     title: {
-      primary:
-        "Elicited Imitation Tasks as a Measure of L2 Proficiency",
+      primary: "Elicited Imitation Tasks as a Measure of L2 Proficiency",
       secondary: "A Meta-Analysis",
     },
     with: ["Plonsky, L."],

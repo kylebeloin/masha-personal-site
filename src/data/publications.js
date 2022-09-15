@@ -61,6 +61,26 @@ export const publications = [
   },
   {
     title: {
+      primary: "Prosody and pragmatics in applied linguistics",
+      secondary: "",
+    },
+    authors: ["Kostromitina, M., Kermad, A."],
+    section: "In Press",
+    year: "in press",
+    type: "chapter",
+
+    data: {
+      in: "The Encyclopedia of Applied Linguistics",
+      editors: ["C. Chapelle"],
+      publisher: "Wiley",
+      city: "",
+      description:
+        "Prosodic properties of a language bear multiple functions. One of such functions is to signal pragmatic meaning in spoken discourse. Speakers produce various prosodic patterns to achieve communicative goals by placing prominence onto selected syllables, changing the speed of their speech, or using rising, falling, or level tones. This relationship between prosodic patterns and discourse is fundamental to interpreting pragmatic meaning and, as such, has been observed in several pragmatic discourse elements including speech acts, (dis)agreements, and feedback markers by first (L1) and second (L2) language speakers across languages. Although pragmatic functions of prosody are intuitive for L1 speakers, L2 learners are oftentimes unaware of the underlying conventions of prosodic use in a given language. Due to this unintuitive nature of prosody for L2 learners, deviations in learners’ prosodic patterns may be misinterpreted by interlocutors and may have negative pragmatic consequences in a given communicative situation. This chapter defines the relationship between prosody and pragmatics in discourse and provides a brief overview of the current research at the pragma–prosodic interface. It focuses on the prosody of speech acts highlighting differences in L1 and L2 perception and production of prosody. Important constructs related to pragma–prosodic success are highlighted. The chapter concludes with an appraisal of the current literature and an outline of directions for future research and pedagogical applications for L2 instruction.",
+    },
+    abstract: "",
+  },
+  {
+    title: {
       primary: "Individual learner characteristics and pragmatic competence",
       secondary: "",
     },
@@ -180,26 +200,6 @@ export const publications = [
     },
     abstract:
       "Previous research has established the importance of positive Yelp reviews for the success of independent, non-chain restaurant. While managers may assume that increasing customer satisfaction will increase star rating, previous research on determinants of satisfaction does not necessarily generalize to Yelp reviews or across Yelp star ratings. Accordingly, we used Multiple Correspondence Analysis with a representative sample of 54,000 reviews to investigate the criteria used by reviewers in their assignment of star-ratings to determine if different star-ratings are characterized by different criteria. Our findings confirm previous research showing the importance of service, food, and environment, but suggest these criteria matter differently at different star ratings. Based on these results, we offer suggestions for improving restaurants’ star-ratings: for 1 and 2-star restaurants, avoid long waits, for 3-star restaurants, focus on improving food quality, for 4 and 5-star restaurants, focus on creating a positive overall experience through service, food, and environmental factors.",
-  },
-  {
-    title: {
-      primary: "Prosody and pragmatics in applied linguistics",
-      secondary: "",
-    },
-    authors: ["Kostromitina, M., Kermad, A."],
-    section: "In Press",
-    year: "in press",
-    type: "chapter",
-
-    data: {
-      in: "The Encyclopedia of Applied Linguistics",
-      editors: ["C. Chapelle"],
-      publisher: "Wiley",
-      city: "",
-      description:
-        "Prosodic properties of a language bear multiple functions. One of such functions is to signal pragmatic meaning in spoken discourse. Speakers produce various prosodic patterns to achieve communicative goals by placing prominence onto selected syllables, changing the speed of their speech, or using rising, falling, or level tones. This relationship between prosodic patterns and discourse is fundamental to interpreting pragmatic meaning and, as such, has been observed in several pragmatic discourse elements including speech acts, (dis)agreements, and feedback markers by first (L1) and second (L2) language speakers across languages. Although pragmatic functions of prosody are intuitive for L1 speakers, L2 learners are oftentimes unaware of the underlying conventions of prosodic use in a given language. Due to this unintuitive nature of prosody for L2 learners, deviations in learners’ prosodic patterns may be misinterpreted by interlocutors and may have negative pragmatic consequences in a given communicative situation. This chapter defines the relationship between prosody and pragmatics in discourse and provides a brief overview of the current research at the pragma–prosodic interface. It focuses on the prosody of speech acts highlighting differences in L1 and L2 perception and production of prosody. Important constructs related to pragma–prosodic success are highlighted. The chapter concludes with an appraisal of the current literature and an outline of directions for future research and pedagogical applications for L2 instruction.",
-    },
-    abstract: "",
   },
   {
     title: {

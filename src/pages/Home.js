@@ -15,11 +15,18 @@ export const Home = () => {
         Projects
       </a>{" "}
       page.  */}
-      You can visit the{" "}
-      <a className="ui" href={"/cv"}>
+      You can download my{" "}
+      <a
+        className="ui"
+        href="https://kostromitina.s3.us-east-2.amazonaws.com/kostromitina_cv_14092022.pdf"
+        title={"Download Curriculum Vitae"}
+        aria-label="link"
+        target={"_blank"}
+        rel="noreferrer"
+      >
         CV
       </a>{" "}
-      page to learn about my teaching experience as well as service and awards.
+      to learn about my teaching experience as well as service and awards.
     </p>
   );
 
