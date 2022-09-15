@@ -14,6 +14,45 @@ const projects = [
     collaborators: "",
     className: "projects__card",
   },
+  {
+    // If true, card animates on hover. Set an "href: [link]" property on this card to link.
+
+    // Label at bottom of card (Header)
+    title: "Coming Soon...",
+    // Primary text on card
+    description: "",
+    // Appears in grey at top of card
+    role: "",
+    principal: "",
+    collaborators: "",
+    className: "projects__card",
+  },
+  {
+    // If true, card animates on hover. Set an "href: [link]" property on this card to link.
+
+    // Label at bottom of card (Header)
+    title: "Coming Soon...",
+    // Primary text on card
+    description: "",
+    // Appears in grey at top of card
+    role: "",
+    principal: "",
+    collaborators: "",
+    className: "projects__card",
+  },
+  {
+    // If true, card animates on hover. Set an "href: [link]" property on this card to link.
+
+    // Label at bottom of card (Header)
+    title: "Coming Soon...",
+    // Primary text on card
+    description: "",
+    // Appears in grey at top of card
+    role: "",
+    principal: "",
+    collaborators: "",
+    className: "projects__card",
+  },
 ];
 
 export const projectCards = () => {

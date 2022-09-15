@@ -312,3 +312,9 @@ a.ui.ui:hover:not(.disabled__link) {
     margin: 0 !important;
   }
 }
+
+@media (min-width: 992px) {
+  .main__right--background {
+    max-height: calc(100vh - calc(4rem + 46px)) !important;
+  }
+}

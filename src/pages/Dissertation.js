@@ -1,30 +1,36 @@
 import Page from "./Page";
 import { Header } from "semantic-ui-react";
 import grants from "../data/grants";
-
-const grantElement = (grant) => {
-  let element;
-  if (grant?.link) {
-    element = (
-      <a
-        className="ui"
-        href={`${grant.link}`}
-        title={`${grant?.by ?? ""}`}
-        aria-label="link"
-        target={"_blank"}
-        rel="noreferrer"
-      >
-        {grant.by}
-      </a>
-    );
-  } else {
-    element = <span className="ui">{grant.by}</span>;
-  }
-
-  return element;
-};
+import React from "react";
 
 export const Dissertation = () => {
+  const grantElement = (grant) => {
+    let element;
+    if (grant?.link) {
+      element = (
+        <a
+          className="ui"
+          href={`${grant.link}`}
+          title={`${grant?.by ?? ""}`}
+          aria-label="link"
+          target={"_blank"}
+          rel="noreferrer"
+          key={"test"}
+        >
+          {grant.by}
+        </a>
+      );
+    } else {
+      element = (
+        <span key={"test"} className="ui">
+          {grant.by}
+        </span>
+      );
+    }
+
+    return element;
+  };
+
   const title = "Dissertation Project";
   const content = (
     <>
@@ -39,10 +45,10 @@ export const Dissertation = () => {
 
         {grants.map((grant, i) => {
           return (
-            <>
+            <React.Fragment key={i}>
               {grantElement(grant)}
               {i + 1 === grants.length ? "" : ", "}
-            </>
+            </React.Fragment>
           );
         })}
       </p>

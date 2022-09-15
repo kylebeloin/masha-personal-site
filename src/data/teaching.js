@@ -1,138 +1,648 @@
+/*
+@typedef {Object} Section
+@property {int|null} year
+@property {string|null} semester
+@property {string|null} mode
+@property {int} total
+
+@typedef {Object} Course
+@property {string|null} subject
+@property {int|null} number
+@property {string} institution
+@property {string} location
+@property {string|null} level
+@property {string} title
+@property {string} role
+@property {int|null} hours
+@property {Section[]} sections
+@property {string} [description]
+
+@typedef {Course[]} Teaching
+*/
 export const teaching = [
   {
-    level: "University",
+    subject: "ENG",
+    number: 559,
     institution: "Northern Arizona University",
-    courses: [
-      // ENG 559: ESL Methods and Materials: Reading and Writing
-      // Summer 2020 (online)
+    location: "Flagstaff, AZ",
+    level: "University",
+    title: "ESL Methods and Materials: Reading and Writing",
+    role: "Instructor",
+    hours: 3,
+    sections: [
       {
-        number: "ENG 559",
-        title: "ESL Methods and Materials: Reading and Writing",
-        role: "Instructor",
-        sections: [
-          {
-            year: "2020",
-            semester: "Summer",
-            location: "online",
-          },
-        ],
+        year: 2020,
+        semester: "Summer",
+        mode: "online",
+        total: 1,
       },
-      // ENG 538: Cross-Cultural Aspects of Language Learning
+    ],
+  },
+  // ENG 538: Cross-Cultural Aspects of Language Learning
+  {
+    subject: "ENG",
+    number: 538,
+    title: "Cross-Cultural Aspects of Language Learning",
+    institution: "Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "University",
+    role: "Instructor",
+    hours: 3,
+    sections: [
       {
-        number: "ENG 538",
-        title: "Cross-Cultural Aspects of Language Learning",
-        role: "Instructor",
-        sections: [
-          {
-            year: "2022",
-            semester: "Summer",
-            location: "online",
-          },
-        ],
+        year: 2022,
+        semester: "Summer",
+        mode: "online",
+        total: 1,
+      },
+    ],
+  },
+  {
+    // BME 480: Parent and Community Involvement in ESL and Bilingual Programs Winter 2021 (online)
+    subject: "BME",
+    number: 480,
+    title: "Parent and Community Involvement in ESL and Bilingual Programs",
+    institution: "Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "University",
+    role: "Instructor",
+    hours: 3,
+    sections: [
+      {
+        year: 2021,
+        semester: "Winter",
+        mode: "online",
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: "ENG",
+    number: 205,
+    title: "The Academic Writer's Workshop",
+    // Fall 2017; Spring 2018; Summer 2018 (hybrid)
+    institution: "Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "University",
+    role: "Instructor",
+    hours: 2,
+    sections: [
+      {
+        year: 2018,
+        semester: "Summer",
+        mode: "hybrid",
+        total: 1,
       },
       {
-        // BME 480: Parent and Community Involvement in ESL and Bilingual Programs Winter 2021 (online)
-        number: "BME 480",
-        title: "Parent and Community Involvement in ESL and Bilingual Programs",
-        role: "Instructor",
-        sections: [
-          {
-            year: "2021",
-            semester: "Winter",
-            location: "online",
-          },
-        ],
+        year: 2018,
+        semester: "Spring",
+        mode: null,
+        total: 1,
       },
       {
-        number: "ENG 205",
-        title: "The Academic Writer's Workshop",
-        // Fall 2017; Spring 2018; Summer 2018 (hybrid)
-        role: "Instructor",
-        sections: [
-          {
-            year: "2018",
-            semester: "Summer",
-            location: "hybrid",
-          },
-          {
-            year: "2018",
-            semester: "Spring",
-          },
-          {
-            year: "2017",
-            semester: "Fall",
-          },
-        ],
+        year: 2017,
+        semester: "Fall",
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: "ENG",
+    number: 105,
+    title: "Critical Reading and Writing in the University Community",
+    institution: "Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "University",
+    role: "Instructor",
+    hours: 4,
+    sections: [
+      {
+        year: 2021,
+        semester: "Spring",
+        mode: null,
+        total: 1,
       },
       {
-        number: "ENG 105",
-        title: "Critical Reading and Writing in the University Community",
-        role: "Instructor",
-        sections: [
-          {
-            year: "2021",
-            semester: "Spring",
-          },
-          {
-            year: "2020",
-            semester: "Fall",
-          },
-          {
-            year: "2020",
-            semester: "Spring",
-          },
-          {
-            year: "2019",
-            semester: "Fall",
-          },
-          {
-            year: "2019",
-            semester: "Spring",
-          },
-          {
-            year: "2018",
-            semester: "Fall",
-          },
-          {
-            year: "2017",
-            semester: "Summer",
-          },
-          {
-            year: "2017",
-            semester: "Spring",
-          },
-          {
-            year: "2016",
-            semester: "Fall",
-          },
-        ],
+        year: 2020,
+        semester: "Fall",
+        mode: null,
       },
-
       {
-        // ENG 528: Grammatical Foundations
-        // Spring 2022
-        number: "ENG 528",
-        title: "Grammatical Foundations",
-        role: "Teaching Assistant",
-        sections: [
-          {
-            year: "2022",
-            semester: "Spring",
-          },
-        ],
+        year: 2020,
+        mode: null,
+        semester: "Spring",
+        total: 1,
       },
-      //  ENG 308: Introduction to Linguistics
-      // Fall 2022
       {
-        number: "ENG 308",
-        title: "Introduction to Linguistics",
-        role: "Teaching Assistant",
-        sections: [
-          {
-            year: "2022",
-            semester: "Fall",
-          },
-        ],
+        year: 2019,
+        semester: "Fall",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2019,
+        semester: "Spring",
+        mode: null,
+        total: 3,
+      },
+      {
+        year: 2018,
+        semester: "Fall",
+        mode: null,
+        total: 3,
+      },
+      {
+        year: 2017,
+        semester: "Summer",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2017,
+        semester: "Spring",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2016,
+        semester: "Fall",
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: "ENG",
+    number: 100,
+    title: "Individualized Writing Instruction",
+    institution: "Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "University",
+    role: "Instructor",
+    hours: 1,
+    sections: [
+      {
+        year: 2017,
+        semester: "Spring",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2016,
+        semester: "Fall",
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  // Teaching Assistant
+  {
+    // ENG 528: Grammatical Foundations
+    // Spring 2022
+    subject: "ENG",
+    number: 528,
+    title: "Grammatical Foundations",
+    institution: "Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "University",
+    role: "Teaching Assistant",
+    hours: 3,
+    sections: [
+      {
+        year: 2022,
+        semester: "Spring",
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  //  ENG 308: Introduction to Linguistics
+  // Fall 2022
+  {
+    subject: "ENG",
+    number: 308,
+    title: "Introduction to Linguistics",
+    role: "Teaching Assistant",
+    institution: "Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "University",
+    hours: 3,
+    sections: [
+      {
+        year: 2022,
+        semester: "Fall",
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  // Intensive English Programs
+  {
+    subject: "ENG",
+    number: 105,
+    title:
+      "Critical Reading and Writing in the University Community (international students)",
+    institution: "Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "Intensive English Programs",
+    role: "Instructor",
+    hours: 4,
+    sections: [
+      {
+        year: 2019,
+        semester: "Spring",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2018,
+        semester: "Fall",
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  // Language Schools
+  {
+    subject: null,
+    number: null,
+    title: "Business English (individual and group classes)",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title: "TOEFL preparation (individual and group classes)",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title: "IELTS preparation (individual and group classes)",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title: "Unified State Exam preparation (individual and group classes)",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title:
+      "English Integrated Skills for Beginners (individual and group classes for children and adults)",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2012,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title: "English Integrated Skills for Intermediate Learners",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2012,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title: "English Integrated Skills for Advanced Learners",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2012,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title:
+      "German Integrated Skills for Beginners (individual and group classes for children and adults)",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2012,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title: "German Integrated Skills for Intermediate Learners",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2012,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  {
+    subject: null,
+    number: null,
+    title: "Russian Integrated Skills for Beginners",
+    institution: "School of Foreign Languages No. 1",
+    location: "Penza, Russia",
+    level: "Language Schools",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2015,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2014,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2013,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2012,
+        semester: null,
+        mode: null,
+        total: 1,
+      },
+    ],
+  },
+  // High Schools
+  {
+    subject: null,
+    number: null,
+    title:
+      "English Reading and Writing  (Content-based instruction with a focus on Climate Change)",
+    institution: "Upward Bound Academy, Northern Arizona University",
+    location: "Flagstaff, AZ",
+    level: "High School",
+    role: "Instructor",
+    hours: null,
+    sections: [
+      {
+        year: 2022,
+        semester: "Summmer",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2021,
+        semester: "Summmer",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2020,
+        semester: "Summmer",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2019,
+        semester: "Summmer",
+        mode: null,
+        total: 1,
+      },
+      {
+        year: 2018,
+        semester: "Summmer",
+        mode: null,
+        total: 1,
       },
     ],
   },
