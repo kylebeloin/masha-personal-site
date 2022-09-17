@@ -1,4 +1,5 @@
 import { Header } from "semantic-ui-react";
+// TODO - add a link to the presentation
 
 export const presentations = [
   {
