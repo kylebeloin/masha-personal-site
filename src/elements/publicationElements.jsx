@@ -22,7 +22,12 @@ export const publicationElement = (publication, i) => {
           ]
         : [];
       el = (
-        <Header key={`pub-container-${i}`} size="small" className="publication">
+        <Header
+          as={"article"}
+          key={`pub-container-${i}`}
+          size="small"
+          className="publication"
+        >
           <Header.Subheader>
             <p style={{ marginBottom: "0" }}>
               {publication.authors.reduce((prev, curr, i) => {
@@ -113,14 +118,16 @@ export const publicationElement = (publication, i) => {
                       <p>{publication.data.publisher}</p>
                     </Grid.Column>
                   </Grid.Row>
-                  <Grid.Row style={{ flexDirection: "column" }}>
-                    <Grid.Column style={{ width: "fit-content" }}>
-                      <p style={{ fontWeight: "800" }}>Description:</p>
-                    </Grid.Column>
-                    <Grid.Column width={14}>
-                      <p>{publication.data?.description || ""}</p>
-                    </Grid.Column>
-                  </Grid.Row>
+                  {publication.data?.description && (
+                    <Grid.Row style={{ flexDirection: "column" }}>
+                      <Grid.Column style={{ width: "fit-content" }}>
+                        <p style={{ fontWeight: "800" }}>Description:</p>
+                      </Grid.Column>
+                      <Grid.Column width={14}>
+                        <p>{publication.data?.description || ""}</p>
+                      </Grid.Column>
+                    </Grid.Row>
+                  )}
                 </Grid>
               </Segment>
             ),
@@ -128,7 +135,12 @@ export const publicationElement = (publication, i) => {
         },
       ];
       el = (
-        <Header key={`pub-container-${i}`} size="small" className="publication">
+        <Header
+          as={"article"}
+          key={`pub-container-${i}`}
+          size="small"
+          className="publication"
+        >
           <Header.Subheader>
             <p style={{ marginBottom: "0" }}>
               {publication.authors.reduce((prev, curr, i) => {

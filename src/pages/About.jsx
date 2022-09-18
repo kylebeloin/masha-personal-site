@@ -9,7 +9,7 @@ export const About = () => {
           I am a Ph.D. candidate in Applied Linguistics at Northern Arizona
           University. My research interests lie at the intersection of second
           language prosody and pragmatics. Specifically, I investigate the
-          effectiveness of pragma–prosodic training in improving learners’ use
+          effectiveness of pragma-prosodic training in improving learners' use
           of prosody in speech acts and the role of cognitive individual
           differences in prosody acquisition. I have also been involved in
           research projects in the domains of speech perception, language

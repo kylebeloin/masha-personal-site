@@ -44,7 +44,7 @@ h6 {
   text-transform: capitalize !important;
 }
 
-div.ui.header:is(.publication) {
+article.ui.header:is(.publication) {
   margin-bottom: 1rem;
 }
 

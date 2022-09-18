@@ -1,9 +1,127 @@
-import { Header } from "semantic-ui-react";
-// TODO - add a link to the presentation
-
+/**
+ * @typedef {Object} Title
+ * @property {string} primary
+ * @property {string} secondary
+ *
+ * @typedef {Object} Presentation
+ * @property {number|string} year
+ * @property {Title} title
+ * @property {string[]} with
+ * @property {string} conference
+ * @property {string} location
+ * @property {string} format
+ * @property {string} [type]
+ */
+/**
+ * @type {Presentation[]}
+ */
 export const presentations = [
   {
-    year: "2022",
+    year: 2021,
+    title: {
+      primary: "Assessing L2 English learners' oral proficiency",
+      secondary: "How to choose and administer elicited imitation tasks online",
+    },
+    with: ["Sudina, E."],
+    conference: "Arizona TESOL conference",
+    location: "(Online)",
+    format: "oral presentation",
+    type: "workshop",
+  },
+  {
+    year: 2021,
+    title: {
+      primary: "Perceptions of accented English",
+      secondary:
+        "Promoting awareness of speaker variation and social justice in the ELT classroom",
+    },
+    with: ["Hirschi, K."],
+    conference:
+      "11th International Research Conference on Education, Language, and Literature (IRCEELT)",
+    location: "(Online)",
+    format: "oral presentation",
+    type: "workshop",
+  },
+  {
+    year: 2018,
+    title: {
+      primary: "How to design adaptable placement tests for adult ESL learners",
+      secondary: "",
+    },
+    with: ["Campbell, D."],
+    conference: "Arizona TESOL conference",
+    location: "(Online)",
+    format: "oral presentation",
+    type: "workshop",
+  },
+  {
+    year: 2022,
+    title: {
+      primary: "Pragma-prosodic variation in L2 learners' refusals",
+      secondary: "",
+    },
+    with: ["Kang, O."],
+    conference: "Pragmatics & Language Learning Conference",
+    location: "(Online)",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2022,
+    title: {
+      primary: "I don't know but do you remember when...",
+      secondary: "I don't know but do you remember when...",
+    },
+    with: ["Keller, D."],
+    conference:
+      "15th International American Association for Corpus Linguistics Conference (AACL)",
+    location: "Flagstaff, AZ",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2022,
+    title: {
+      primary:
+        "Analysis of intonation patterns in naturalistic and elicited L1 and L2 spoken corpora",
+      secondary: "",
+    },
+    with: ["Hirschi, K."],
+    conference:
+      "15th International American Association for Corpus Linguistics Conference (AACL)",
+    location: "Flagstaff, AZ",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2022,
+    title: {
+      primary:
+        "Fairness of Using Different English Accents in Listening Tasks of the Duolingo English Test",
+      secondary: "",
+    },
+    with: ["Kang, O.", "Yan, X.", "Thomson, R.", "Isaacs, T."],
+    conference: "Language Assessment Research Conference",
+    location: "Chicago, IL.",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2022,
+    title: {
+      primary:
+        "Listeners’ attitudes towards different English accents in high stakes listening tests",
+      secondary: "",
+    },
+    with: ["Kang, O.", "Yan, X.", "Thomson, R.", "Isaacs, T."],
+    conference:
+      "Pronunciation in Second Language Learning and Teaching Conference (PSLLT)",
+    location: "St. Catherines, ON, Canada",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2022,
     title: {
       primary:
         "Prosody of L1 and L2 English speakers' pragmatic production of high imposition requests and refusals",
@@ -13,9 +131,10 @@ export const presentations = [
     conference: "AAAL 2022 Conference",
     location: "Pittsburgh, PA",
     format: "poster",
+    type: "research",
   },
   {
-    year: "2022",
+    year: 2022,
     title: {
       primary:
         "Role of prosody in perceptions of politeness in L1 and L2 English requests and refusals",
@@ -25,9 +144,48 @@ export const presentations = [
     conference: "AAAL 2022 Conference",
     location: "Pittsburgh, PA",
     format: "oral presentation",
+    type: "research",
   },
   {
-    year: "2021",
+    year: 2022,
+    title: {
+      primary: "What does it mean to “search a cell phone?”",
+      secondary: "",
+    },
+    with: ["Cunningham, C.", "Egbert, J.", "Black, A."],
+    conference: "Annual Law & Corpus Linguistics Conference",
+    location: "Provo, UT",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2021,
+    title: {
+      primary:
+        "Describing the discourse of pandemic-focused Yelp reviews to find the new normal",
+      secondary: "A keyword analysis",
+    },
+    with: ["Keller, D.", "Cavusoglu, M.", "Beloin, K."],
+    conference: "Corpus Linguistics International Conference (CL2021)",
+    location: "(Online)",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2021,
+    title: {
+      primary:
+        "Identifying dimensions of keyword variation using Multiple Correspondence Analysis",
+      secondary: "",
+    },
+    with: ["Keller, D.", "Cavusoglu, M.", "Beloin, K."],
+    conference: "Corpus Linguistics International Conference (CL2021)",
+    location: "(Online)",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2021,
     title: {
       primary: "Elicited Imitation Tasks as a Measure of L2 Proficiency",
       secondary: "A Meta-Analysis",
@@ -36,9 +194,10 @@ export const presentations = [
     conference: "AAAL 2021 Conference",
     location: "Pittsburgh, PA (Online)",
     format: "oral presentation",
+    type: "research",
   },
   {
-    year: "2020",
+    year: 2020,
     title: {
       primary:
         "Explicit Prosodic Priming of Relative Clause Attachment Preferences in L1 and L2 English Speakers",
@@ -48,9 +207,10 @@ export const presentations = [
     conference: "SLRF 2020",
     location: "Nashville, TN (Online)",
     format: "oral presentation",
+    type: "research",
   },
   {
-    year: "2020",
+    year: 2021,
     title: {
       primary:
         "From Corpus to Classroom: Evaluating Web-based Tools to Teach Collocations",
@@ -60,9 +220,10 @@ export const presentations = [
     conference: "AZ-CALL",
     location: "Phoenix, AZ (Online)",
     format: "oral presentation",
+    type: "teaching-oriented",
   },
   {
-    year: "2020",
+    year: 2020,
     title: {
       primary:
         "Corpus-driven Investigation of Lexical Bundles in Online User-generated Reviews",
@@ -72,9 +233,10 @@ export const presentations = [
     conference: "TESOL Convention Doctoral Forum",
     location: "Denver, CO (Online)",
     format: "oral presentation",
+    type: "research",
   },
   {
-    year: "2020",
+    year: 2020,
     title: {
       primary:
         "Establishing a Writing Community Through Interactive Personal Blogs",
@@ -84,9 +246,10 @@ export const presentations = [
     conference: "ASU 2020 Composition Conference",
     location: "Tempe, AZ",
     format: "oral presentation",
+    type: "teaching-oriented",
   },
   {
-    year: "2019",
+    year: 2019,
     title: {
       primary:
         "Nine Activities to Enhance Writing Processes through Community Building",
@@ -96,9 +259,10 @@ export const presentations = [
     conference: "TESOL Convention",
     location: "Atlanta, GA",
     format: "oral presentation",
+    type: "teaching-oriented",
   },
   {
-    year: "2019",
+    year: 2019,
     title: {
       primary:
         "Designing Flexible Placement Tests for Adult English Language Learners",
@@ -108,9 +272,10 @@ export const presentations = [
     conference: "TESOL Convention",
     location: "Atlanta, GA",
     format: "oral presentation",
+    type: "research",
   },
   {
-    year: "2018",
+    year: 2018,
     title: {
       primary: "Pause, Inhale, Speak",
       secondary:
@@ -120,9 +285,10 @@ export const presentations = [
     conference: "TESOL Convention Masters Forum",
     location: "Chicago, IL",
     format: "oral presentation",
+    type: "teaching-oriented",
   },
   {
-    year: "2018",
+    year: 2018,
     title: {
       primary:
         "Pragmatics of Service Encounter Requests in English, German, and Russian",
@@ -133,9 +299,10 @@ export const presentations = [
       "Sixth International Conference on the Development and Assessment of Intercultural Competence",
     location: "Tempe, AZ",
     format: "oral presentation",
+    type: "research",
   },
   {
-    year: "2017",
+    year: 2017,
     title: {
       primary: "Building Bonds",
       secondary: "Activities for Building Community in the Classroom",
@@ -144,9 +311,10 @@ export const presentations = [
     conference: "AZTESOL Conference",
     location: "Tucson, AZ",
     format: "oral presentation",
+    type: "teaching-oriented",
   },
   {
-    year: "2017",
+    year: 2017,
     title: {
       primary:
         "Eclectic and Adaptable Vocabulary Practices in the Second Language Classroom",
@@ -156,9 +324,10 @@ export const presentations = [
     conference: "AZTESOL/GSAAL Conference",
     location: "Flagstaff, AZ",
     format: "oral presentation",
+    type: "teaching-oriented",
   },
   {
-    year: "2017",
+    year: 2017,
     title: {
       primary:
         "Task Factors Influencing Complexity, Accuracy, and Fluency in Oral L2 Production",
@@ -168,9 +337,10 @@ export const presentations = [
     conference: "PEAKS Interdisciplinary Conference",
     location: "Flagstaff, AZ",
     format: "oral presentation",
+    type: "research",
   },
   {
-    year: "2016",
+    year: 2016,
     title: {
       primary: "Analysis of Service Encounter Requests in Russian and German",
       secondary: "",
@@ -179,61 +349,20 @@ export const presentations = [
     conference: "BAELc5, Bonn Applied English Linguistics Conference",
     location: "Bonn, Germany",
     format: "oral presentation",
+    type: "research",
   },
   {
-    year: "2015",
+    year: 2015,
     title: {
-      primary: "The Problem of Standards in Higher Education",
+      primary: "The Question of Standards in Higher Education",
       secondary: "",
     },
     with: [],
     conference: "Russian International Studies Association Convent",
     location: "Moscow, Russia",
     format: "oral presentation",
+    type: "research",
   },
 ];
 
-export const presentationElement = (presentation, i) => {
-  let el;
-
-  el = (
-    <Header key={`presentation-container-${i}`} size="small">
-      <Header.Subheader>
-        <p style={{ marginBottom: "0" }}>
-          {presentation.conference}{" "}
-          <span className="year--emphasis">({presentation.year})</span>
-        </p>
-      </Header.Subheader>
-      <Header
-        key={`presentation-title-${i}`}
-        size="tiny"
-        className={`presentation__link ${
-          !presentation.link ? "disabled__link" : ""
-        }`}
-        as={"a"}
-        href={presentation.link ? presentation.link : ""}
-        target={"_blank"}
-        onClick={presentation.link ? null : (event) => event.preventDefault()}
-      >
-        {presentation.title.primary}
-        {presentation.title.secondary !== "" &&
-          `: ${presentation.title.secondary}`}
-      </Header>
-      <Header.Subheader key={`presentation-location-${i}`}>
-        {presentation["with"].length !== 0 && (
-          <p style={{ marginBottom: "0" }}>
-            {"Presented with "}
-            {`${presentation["with"].reduce((prev, curr, i) => {
-              return i === 0 ? curr : prev + ", " + curr;
-            }, "")}`}{" "}
-          </p>
-        )}
-
-        <p style={{ marginBottom: "0" }}>
-          {presentation.location} ({presentation.format})
-        </p>
-      </Header.Subheader>
-    </Header>
-  );
-  return el;
-};
+export default presentations;

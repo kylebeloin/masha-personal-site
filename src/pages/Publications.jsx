@@ -8,11 +8,16 @@ import { groupBy } from "../utility";
 export const Publications = () => {
   const title = "Publications";
 
-  publications.sort(sortPublications);
+  let sortedPublications = [...publications].sort(sortPublications);
 
-  const groupedPublications = groupBy(publications, "type").map(
+  const groupedPublications = groupBy(sortedPublications, "type").map(
     (grouped, i) => {
-      return { group: grouped.group, items: groupBy(grouped.items, "year") };
+      return {
+        group: grouped.group,
+        items: groupBy(grouped.items, "year", (group) => {
+          return parseInt(group) ? "published" : group;
+        }),
+      };
     }
   );
 
@@ -26,7 +31,10 @@ export const Publications = () => {
             </Divider>
             {items.map((inner, j) => {
               return (
-                <div key={`${inner.group}-${j}-div`}>
+                <div
+                  key={`${inner.group}-${j}-div`}
+                  id={`${group}-${inner.group.replace(" ", "-")}`}
+                >
                   <Label color="red" ribbon>
                     {`${inner.group}`}
                   </Label>

@@ -1,6 +1,6 @@
 import Page from "./Page";
 
-import { projectCards } from "../data/projects";
+import { projectCards } from "../elements/projectElements";
 
 export const Projects = () => {
   const title = "Projects";
