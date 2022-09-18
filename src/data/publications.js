@@ -159,7 +159,7 @@ export const publications = [
       keywords: [],
       abstract: (
         <>
-          "Much language attitude research has demonstrated that people make
+          Much language attitude research has demonstrated that people make
           biased judgements based on speakers' language choice and accent.
           However, the influence of occupational context on listeners'
           perceptions of accented English is largely unknown. This verbal guise
@@ -659,6 +659,7 @@ const sortPublicationsByYears = (year) => {
       return year instanceof String ? parseInt(year) ?? year : year;
   }
 };
+
 const sortPublicationsByAuthors = (authors) => {
   let first = authors[0];
   // sort by Kostrimitina as first author, then by last name

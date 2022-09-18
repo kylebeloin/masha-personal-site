@@ -17,6 +17,43 @@
  */
 export const presentations = [
   {
+    year: 2022,
+    title: {
+      primary: "Invited lecture on pragmatic features of spoken discourse",
+      secondary: "",
+    },
+    with: [],
+    conference:
+      "Graduate seminar in Research Issues in English Language Teaching",
+    location: "(Instructor: Dr. Romy Ghanem)",
+    format: "In-person",
+    type: "invited course lectures",
+  },
+  {
+    year: 2022,
+    title: {
+      primary: "Invited lecture on L2 pragmatics and prosody",
+      secondary: "",
+    },
+    with: [],
+    conference: "Undergraduate seminar in language",
+    location: "(Instructor: Dr. Okim Kang)",
+    format: "In-person",
+    type: "invited course lectures",
+  },
+  {
+    year: 2019,
+    title: {
+      primary: "Invited lecture on teaching ESL/EFL abroad",
+      secondary: "",
+    },
+    with: ["Wood, M."],
+    conference: "Graduate seminar on professional development",
+    location: "(Instructor: Dr. Fredricka Stoller)",
+    format: "In-person",
+    type: "invited course lectures",
+  },
+  {
     year: 2021,
     title: {
       primary: "Assessing L2 English learners' oral proficiency",
@@ -26,7 +63,7 @@ export const presentations = [
     conference: "Arizona TESOL conference",
     location: "(Online)",
     format: "oral presentation",
-    type: "workshop",
+    type: "workshops",
   },
   {
     year: 2021,
@@ -40,7 +77,7 @@ export const presentations = [
       "11th International Research Conference on Education, Language, and Literature (IRCEELT)",
     location: "(Online)",
     format: "oral presentation",
-    type: "workshop",
+    type: "workshops",
   },
   {
     year: 2018,
@@ -52,7 +89,7 @@ export const presentations = [
     conference: "Arizona TESOL conference",
     location: "(Online)",
     format: "oral presentation",
-    type: "workshop",
+    type: "workshops",
   },
   {
     year: 2022,
@@ -70,7 +107,7 @@ export const presentations = [
     year: 2022,
     title: {
       primary: "I don't know but do you remember when...",
-      secondary: "I don't know but do you remember when...",
+      secondary: "",
     },
     with: ["Keller, D."],
     conference:
@@ -364,5 +401,27 @@ export const presentations = [
     type: "research",
   },
 ];
+
+const sortPresentationsByType = (type) => {
+  switch (type) {
+    case "research":
+      return 9999;
+    case "teaching-oriented":
+      return 9998;
+    case "workshops":
+      return 9997;
+    case "invited course lecture":
+      return 9996;
+    default:
+      return 9995;
+  }
+};
+
+export const sortPresentations = (a, b) => {
+  return (
+    sortPresentationsByType(b.type) - sortPresentationsByType(a.type) ||
+    b.year - a.year
+  );
+};
 
 export default presentations;

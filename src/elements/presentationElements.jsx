@@ -36,9 +36,7 @@ export const presentationElement = (presentation, i) => {
           </p>
         )}
 
-        <p style={{ marginBottom: "0" }}>
-          {presentation.location} ({presentation.format})
-        </p>
+        <p style={{ marginBottom: "0" }}>{presentation.location}</p>
       </Header.Subheader>
     </Header>
   );

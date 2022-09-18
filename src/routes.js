@@ -12,6 +12,7 @@ export const routes = [
   { name: "Projects", path: "projects", element: Projects },
   { name: "Publications", path: "publications", element: Publications },
   { name: "Presentations", path: "presentations", element: Presentations },
+  // { name: "Presentations", path: "presentations", element: Presentations },
   // { name: "CV", path: "cv", element: Cv },
   { name: "Dissertation", path: "dissertation", element: Dissertation },
 ];
