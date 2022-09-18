@@ -6,7 +6,7 @@ export const presentations = [
     year: "2022",
     title: {
       primary:
-        "Prosody of L1 and L2 English speakers’ pragmatic production of high imposition requests and refusals",
+        "Prosody of L1 and L2 English speakers' pragmatic production of high imposition requests and refusals",
       secondary: "",
     },
     with: [],

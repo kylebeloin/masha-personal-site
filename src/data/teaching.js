@@ -1,4 +1,4 @@
-/*
+/**
 @typedef {Object} Section
 @property {int|null} year
 @property {string|null} semester
@@ -19,6 +19,16 @@
 
 @typedef {Course[]} Teaching
 */
+
+/**
+ * @type {Teaching}
+ * @constant
+ * @default
+ * @description
+ * This is a list of courses I have taught.
+ *
+ * The `sections` property is an array of objects that describe the sections of the course.
+ * */
 export const teaching = [
   {
     subject: "ENG",

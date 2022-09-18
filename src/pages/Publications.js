@@ -1,43 +1,42 @@
 import Page from "./Page";
-import { publicationElement, publications } from "../data/publications";
-import { Divider, Header } from "semantic-ui-react";
+import { publications, sortPublications } from "../data/publications";
+import { publicationElement } from "../elements/publicationElements";
+import { Divider, Header, Label } from "semantic-ui-react";
+import { groupBy } from "../utility";
+// TODO: Add filter and sort / search
 
 export const Publications = () => {
   const title = "Publications";
 
-  const sections = [
-    {
-      title: "Articles",
-      elements: publications
-        .filter((e) => e.type === "journal")
-        .map((publication, i) => publicationElement(publication, i)),
-    },
-    {
-      title: "Books",
-      elements: publications
-        .filter((e) => e.type === "book")
-        .map((publication, i) => publicationElement(publication, i)),
-    },
-    {
-      title: "Chapters",
-      elements: publications
-        .filter((e) => e.type === "chapter")
-        .map((publication, i) => publicationElement(publication, i)),
-    },
-  ];
+  publications.sort(sortPublications);
+
+  const groupedPublications = groupBy(publications, "type").map(
+    (grouped, i) => {
+      return { group: grouped.group, items: groupBy(grouped.items, "year") };
+    }
+  );
 
   const content = (
     <div style={{ position: "relative" }}>
-      {sections.map((section, i) => {
+      {groupedPublications.map(({ group, items }, i) => {
         return (
-          <div key={`${section.title}-${i}-div`}>
+          <section id={group} key={`${group}-${i}-div`}>
             <Divider horizontal section>
-              <Header as="h3" id={section.title}>
-                {section.title}
-              </Header>
+              <Header as="h3">{`${group}s`}</Header>
             </Divider>
-            {section.elements}
-          </div>
+            {items.map((inner, j) => {
+              return (
+                <div key={`${inner.group}-${j}-div`}>
+                  <Label color="red" ribbon>
+                    {`${inner.group}`}
+                  </Label>
+                  {inner.items.map((publication, k) => {
+                    return publicationElement(publication, k);
+                  })}
+                </div>
+              );
+            })}
+          </section>
         );
       })}
     </div>

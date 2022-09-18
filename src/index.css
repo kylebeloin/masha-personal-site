@@ -40,6 +40,14 @@ h6 {
   font-weight: 900 !important;
 }
 
+.label {
+  text-transform: capitalize !important;
+}
+
+div.ui.header:is(.publication) {
+  margin-bottom: 1rem;
+}
+
 .project--bold.project--bold {
   font-size: 14px !important;
   line-height: 1;

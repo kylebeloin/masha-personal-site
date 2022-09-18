@@ -8,6 +8,12 @@ export const grants = [
   },
   {
     year: "2022",
+    name: "NFMLTA-MLJ Graduate Dissertation Writing Support Grant",
+    by: "National Federation of Modern Language Teachers Associations",
+    link: "",
+  },
+  {
+    year: "2022",
     name: "Research Grant",
     by: "Duolingo",
     link: "https://blog.duolingo.com/p/afdd21ae-2e18-4628-b5fe-d2c7ad484f89/",
