@@ -9,8 +9,6 @@ export default function Layout() {
   const location = useLocation();
 
   const handleClick = (e) => {
-    e.preventDefault();
-
     setVisible(!visible);
   };
 

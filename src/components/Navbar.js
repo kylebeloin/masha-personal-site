@@ -5,7 +5,7 @@ import { Icon, Menu, Dropdown } from "semantic-ui-react";
 import withRouter from "./withRouter";
 import { routes } from "../routes";
 
-const options = (routes) => {
+const options = (routes, callback) => {
   let options = routes.map((e) => (
     <Menu.Item
       className="menu__item--background item dropdown__item"
@@ -13,6 +13,9 @@ const options = (routes) => {
       as={NavLink}
       to={e.path}
       style={{ display: "grid" }}
+      onClick={(e) => {
+        callback();
+      }}
     >
       {e.name}
     </Menu.Item>
@@ -39,14 +42,14 @@ const options = (routes) => {
   );
 };
 
-export const items = (pathname, key) => {
+export const items = (pathname, key, callback) => {
   const i = routes.map((route, i) => {
     let el;
     if (Array.isArray(route)) {
       el = {
         as: "div",
         key: `dropdown-${i}`,
-        content: options(route),
+        content: options(route, callback),
         active: route.map((r) => `${r.path}`).includes(pathname),
         className: "menu__item--background",
         style: {
@@ -95,7 +98,7 @@ export const Navbar = (props) => {
       id="menu__container"
       className="menu__container--background"
       fixed="top"
-      items={[...items(location.pathname, "nav"), sideNav]}
+      items={[...items(location.pathname, "nav", setVisible), sideNav]}
     />
   );
 };
