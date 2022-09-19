@@ -3,7 +3,7 @@ import { Page } from "./Page";
 import { professionalElement } from "../elements/professionalElements";
 
 export const Professional = () => {
-  const title = "Professional";
+  const title = "Professional Experience";
   const content = (
     <section id="professional-experience" style={{ position: "relative" }}>
       {professional.sort(sortProfessional).map((professional, i) => {

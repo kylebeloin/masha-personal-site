@@ -1,5 +1,5 @@
 import Home from "./pages/Home";
-// import About from "./pages/About";
+
 // import Cv from "./pages/Cv";
 import Publications from "./pages/Publications";
 import { Presentations } from "./pages/Presentations";
@@ -10,7 +10,6 @@ import { Professional } from "./pages/Professional";
 
 export const routes = [
   { name: "Masha Kostromitina", path: "", element: Home },
-  // { name: "About", path: "about", element: About },
   { name: "Projects", path: "projects", element: Projects },
   { name: "Publications", path: "publications", element: Publications },
   { name: "Presentations", path: "presentations", element: Presentations },

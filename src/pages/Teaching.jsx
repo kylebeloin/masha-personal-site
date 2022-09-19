@@ -18,7 +18,7 @@ export const Teaching = () => {
     };
   });
 
-  const title = "Teaching";
+  const title = "Teaching Experience";
   const content = (
     <div style={{ position: "relative" }}>
       {groupedTeaching.map(({ group, items }, i) => {

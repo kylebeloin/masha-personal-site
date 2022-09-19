@@ -1,16 +1,21 @@
 import { Container, Grid, Sidebar, Menu } from "semantic-ui-react";
 import { Outlet, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar, items } from "../components/Navbar";
 import Aside from "../components/Aside";
 
 export default function Layout() {
+  // whenever the location changes, the sidebar will be closed
   const [visible, setVisible] = useState(false);
   const location = useLocation();
 
   const handleClick = (e) => {
     setVisible(!visible);
   };
+
+  useEffect(() => {
+    setVisible(false);
+  }, [location]);
 
   return (
     <div>
