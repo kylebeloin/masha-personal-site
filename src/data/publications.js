@@ -472,6 +472,25 @@ export const publications = [
   },
   {
     title: {
+      primary: "Linguistic features of academic spoken English",
+      secondary: "An SEM approach",
+    },
+    authors: ["Gourlart, L.", "Kostromitina, M."],
+    year: "in preparation",
+    type: "article",
+    /**
+     * @type {ArticleData}
+     */
+    data: {
+      journal: "",
+      editors: "",
+      publisher: "",
+      city: "",
+      abstract: "",
+    },
+  },
+  {
+    title: {
       primary: "Transitional language in spoken discourse",
       secondary: "Evidence from keyword and lexical bundle analyses",
     },
@@ -636,10 +655,10 @@ const sortPublicationsByType = (type) => {
   switch (type) {
     case "book":
       return 9999;
-    case "chapter":
-      return 9999;
     case "journal":
       return 9998;
+    case "chapter":
+      return 9997;
     default:
       return 9997;
   }

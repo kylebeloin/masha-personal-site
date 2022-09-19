@@ -657,3 +657,22 @@ export const teaching = [
     ],
   },
 ];
+
+const sortTeachingByLevel = (level) => {
+  switch (level) {
+    case "University":
+      return 9999;
+    case "Intensive English Programs":
+      return 9999;
+    case "Language Schools":
+      return 9998;
+    case "High School":
+      return 9997;
+    default:
+      return 9996;
+  }
+};
+
+export const sortTeaching = (a, b) => {
+  return sortTeachingByLevel(b.level) - sortTeachingByLevel(a.level);
+};

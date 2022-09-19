@@ -14,7 +14,7 @@ export const About = () => {
           differences in prosody acquisition. I have also been involved in
           research projects in the domains of speech perception, language
           assessment, and corpus linguistics. For more information about the
-          past an current research projects I have been a part of, please visit
+          past and current research projects I have been a part of, please visit
           the "Projects" page.
         </p>
         <p>

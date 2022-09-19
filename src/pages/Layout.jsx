@@ -24,7 +24,7 @@ export default function Layout() {
       <Sidebar
         className={"sidenav__container"}
         as={Menu}
-        items={items(location.pathname)}
+        items={items(location.pathname, "sidebar")}
         visible={visible}
         vertical
         animation="overlay"

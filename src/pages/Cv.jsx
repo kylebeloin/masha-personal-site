@@ -2,8 +2,6 @@ import Page from "./Page";
 import { awards, awardElement } from "../data/awards";
 import { service, serviceElement } from "../data/service";
 import { education, educationElement } from "../data/education";
-import { presentations, presentationElement } from "../data/presentations";
-import { publications, publicationElement } from "../data/publications";
 import { experience, experienceElement } from "../data/experience";
 import { Divider, Header, Accordion, Icon } from "semantic-ui-react";
 
@@ -26,10 +24,6 @@ export const Cv = () => {
     (experience, i) => experience.category === "Research"
   )[0];
 
-  const teaching = experience.filter(
-    (experience, i) => experience.category === "Teaching"
-  )[0];
-
   const sections = [
     {
       title: "Education",
@@ -39,18 +33,7 @@ export const Cv = () => {
       title: "Research",
       elements: research.data.map((e, i) => experienceElement(e, i)),
     },
-    {
-      title: "Teaching",
-      elements: teaching.data.map((e, i) => experienceElement(e, i)),
-    },
-    {
-      title: "Publications",
-      elements: publications.map((e, i) => publicationElement(e, i)),
-    },
-    {
-      title: "Presentations",
-      elements: presentations.map((e, i) => presentationElement(e, i)),
-    },
+
     { title: "Service", elements: service.map((e, i) => serviceElement(e, i)) },
     { title: "Awards", elements: awards.map((e, i) => awardElement(e, i)) },
   ];

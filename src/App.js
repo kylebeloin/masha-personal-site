@@ -8,14 +8,25 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         {routes.map((e, i) => {
-          return (
-            <Route
-              key={i}
-              index={i === 0}
-              path={e.path}
-              element={<e.element />}
-            />
-          );
+          if (Array.isArray(e)) {
+            return e.map((r, i) => (
+              <Route
+                key={`route-${i}`}
+                index={i === 0}
+                path={r.path}
+                element={<r.element />}
+              />
+            ));
+          } else {
+            return (
+              <Route
+                key={i}
+                index={i === 0}
+                path={e.path}
+                element={<e.element />}
+              />
+            );
+          }
         })}
       </Route>
     </Routes>
