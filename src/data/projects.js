@@ -34,6 +34,8 @@ export const projects = [
         size="medium"
         title="British Council Logo"
         floated="right"
+        width="500"
+        height="500"
         src={process.env.PUBLIC_URL + "/images/british-council-logo.png"}
         alt={"British Council Logo."}
         style={{ maxWidth: "33%", padding: "1rem" }}
@@ -74,9 +76,11 @@ export const projects = [
         size="medium"
         title="Duolingo Logo"
         floated="right"
+        width="500"
+        height="500"
         src={process.env.PUBLIC_URL + "/images/duolingo-logo.png"}
         alt={"Duolingo Logo."}
-        style={{ maxWidth: "33%", padding: "2rem" }}
+        style={{ maxWidth: "33%", padding: "2rem", marginTop: "1rem" }}
       />
     ),
   },
