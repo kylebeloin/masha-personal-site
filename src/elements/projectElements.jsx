@@ -5,11 +5,22 @@ export const projectCards = () => {
   return (
     <Card.Group>
       {projects.map((project, i) => (
-        <Card key={`project-card-${i}`} className="projects__card">
+        <Card
+          key={`project-card-${i}`}
+          className={`projects__card ${project?.link ? "link" : ""}`}
+          href={project?.link || ""}
+          as={`${project?.link ? "a" : "div"}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            transition:
+              "box-shadow .1s ease,transform .1s ease,-webkit-box-shadow .1s ease,-webkit-transform .1s ease",
+          }}
+        >
           <Card.Content>
             <Card.Header as={Header}>{project.title}</Card.Header>
           </Card.Content>
-          <Card.Content>
+          <Card.Content as="article">
             <Grid>
               <Grid.Row
                 centered
