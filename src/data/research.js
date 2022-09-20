@@ -12,7 +12,7 @@ export const research = [
           <br />
           PI: Dr. Okim Kang
           <br />
-          <strong>Funded by: the British Council</strong>
+          Funded by: the British Council
         </>
       ),
     },
@@ -36,7 +36,7 @@ export const research = [
           <br />
           PI: Dr. Okim Kang
           <br />
-          <strong>Funded by: the British Council</strong>
+          Funded by: Duolingo
         </>
       ),
     },

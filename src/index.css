@@ -303,6 +303,10 @@ a.ui.ui:hover:not(.disabled__link) {
     padding: 2rem 2rem !important;
   }
 
+  .pushable {
+    height: 100vh;
+  }
+
   .main__right__text.main__right__text,
   .main__right__text.main__right__text > div {
     padding: 0;
