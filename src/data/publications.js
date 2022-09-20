@@ -572,7 +572,7 @@ export const publications = [
           relationships between listeners' attitudes and their performance on
           the test were minimal (r &lt; .26). The findings of the study shed
           light on our understanding of test takers' needs regarding accent
-          varieties in listening tests.,
+          varieties in listening tests.
         </>
       ),
     },
