@@ -15,6 +15,8 @@ export const projectCards = () => {
                 centered
                 as={"div"}
                 className="projects__card__container"
+                width={16}
+                reversed={i % 2 === 0 ? null : "computer"}
               >
                 <Grid.Column width={16}>
                   <Segment
@@ -23,6 +25,7 @@ export const projectCards = () => {
                     basic
                     key={`card-container-${i}`}
                   >
+                    {project?.img && project.img}
                     <Header.Subheader className="projects__text">
                       <p style={{ fontSize: "16px", marginTop: "0" }}>
                         Role: {project.role}

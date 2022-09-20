@@ -1,3 +1,5 @@
+import { Image } from "semantic-ui-react";
+
 export const projects = [
   {
     // If true, card animates on hover. Set an "href: [link]" property on this card to link.
@@ -27,6 +29,16 @@ export const projects = [
     collaborators: "",
     funding: "British Council Assessment Grant 2022",
     className: "projects__card",
+    img: (
+      <Image
+        size="medium"
+        title="British Council Logo"
+        floated="right"
+        src={process.env.PUBLIC_URL + "/images/british-council-logo.png"}
+        alt={"British Council Logo."}
+        style={{ maxWidth: "33%", padding: "1rem" }}
+      />
+    ),
   },
   {
     // If true, card animates on hover. Set an "href: [link]" property on this card to link.
@@ -57,6 +69,16 @@ export const projects = [
     collaborators: "Xun Yan, Ron Thomson, Talia Isaacs",
     funding: "Duolingo Research Grant 2021",
     className: "projects__card",
+    img: (
+      <Image
+        size="medium"
+        title="Duolingo Logo"
+        floated="right"
+        src={process.env.PUBLIC_URL + "/images/duolingo-logo.png"}
+        alt={"Duolingo Logo."}
+        style={{ maxWidth: "33%", padding: "2rem" }}
+      />
+    ),
   },
   {
     // If true, card animates on hover. Set an "href: [link]" property on this card to link.
