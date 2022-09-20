@@ -14,12 +14,19 @@ export const Social = () => {
         <Icon alt="twitter" link circular name="twitter" />
       </a>
       <a
+        title="LinkedIn"
+        className={"social__link"}
+        href={"https://linkedin.com/in/masha-kostromitina"}
+      >
+        <Icon link circular name="linkedin" />
+      </a>
+      {/* <a
         title="instagram"
         className={"social__link"}
         href={"https://www.instagram.com/mashie_mashie/"}
       >
         <Icon link circular name="instagram" />
-      </a>
+      </a> */}
     </div>
   );
 };
