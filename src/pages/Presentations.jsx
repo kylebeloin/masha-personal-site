@@ -2,11 +2,18 @@ import { presentations, sortPresentations } from "../data/presentations";
 import { Page } from "./Page";
 import { presentationElement } from "../elements/presentationElements";
 import { groupBy } from "../utility";
-import { Divider, Header } from "semantic-ui-react";
+import { Divider, Header, Label } from "semantic-ui-react";
 
 export const Presentations = () => {
   let sortedPresentations = presentations.sort(sortPresentations);
-  const groupedPresentations = groupBy(sortedPresentations, "type");
+  const groupedPresentations = groupBy(sortedPresentations, "type").map(
+    (grouped, i) => {
+      return {
+        group: grouped.group,
+        items: groupBy(grouped.items, "year"),
+      };
+    }
+  );
 
   const title = "Presentations";
   const content = (
@@ -18,8 +25,17 @@ export const Presentations = () => {
               <Header as="h3">{`${group.group}`}</Header>
             </Divider>
 
-            {group.items.map((presentation, j) => {
-              return presentationElement(presentation, j);
+            {group.items.map((inner, j) => {
+              return (
+                <div key={`${inner.group}-${j}-div`}>
+                  <Label color="red" ribbon>
+                    {`${inner.group}`}
+                  </Label>
+                  {inner.items.map((presentation, k) => {
+                    return presentationElement(presentation, k);
+                  })}
+                </div>
+              );
             })}
           </section>
         );

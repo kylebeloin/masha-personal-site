@@ -107,7 +107,8 @@ export const presentations = [
     year: 2022,
     title: {
       primary: "I don't know but do you remember when...",
-      secondary: "",
+      secondary:
+        "An analysis of keyword indicators of shifts in communicative purpose in conversational discourse units",
     },
     with: ["Keller, D."],
     conference:

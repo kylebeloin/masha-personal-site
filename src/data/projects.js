@@ -89,21 +89,28 @@ export const projects = [
     // If true, card animates on hover. Set an "href: [link]" property on this card to link.
 
     // Label at bottom of card (Header)
-    title: "The Literacy Center",
+    title: "Raising Readers",
     // Primary text on card
     description: (
       <>
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        The program I lead at the Literacy Center in Flagstaff serves K-2
+        students (mostly ESL) who have been identified as underperforming
+        readers as defined by school assessments. Volunteers involved in the
+        program undergo targeted training and use a vetted currilculum (Heggerty
+        Phonemic Awareness) to provide supplemental reading support. In order to
+        monitor the learning progress, we conduct pre-, mid-, and
+        post-intervention assessments aimed that measure students' phonemic
+        awareness skills. <br />
+        <br />
+        <p style={{ textDecoration: "underline" }}>
+          Click here to read a recent article about the program in the AZ Daily
+          Sun.
+        </p>
       </>
     ),
     // Appears in grey at top of card
-    role: "Role 1, Role 2",
+    role: "Program Coordinator",
+    link: "https://azdailysun.com/news/local/education/raising-readers-program-returns-to-flagstaff-unified-school-district/article_f1f00a3b-e6db-566f-b42e-d9fb401f4ddb.html",
 
     className: "projects__card",
     img: (

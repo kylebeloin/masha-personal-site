@@ -94,13 +94,6 @@ export const awards = [
     type: "fellowship",
   },
   {
-    year: "2019 - 2023",
-    name: "Merit-based graduate assistantship and full tuition waiver",
-    by: "English Department, College of Arts and Letters",
-    institution: "Northern Arizona University",
-    type: "fellowship",
-  },
-  {
     year: "2016 - 2018",
     name: "Merit-based graduate assistantship and full tuition waiver",
     by: "English Department, College of Arts and Letters",
