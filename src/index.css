@@ -339,3 +339,9 @@ a.ui.ui:hover:not(.disabled__link) {
     margin-right: 0.5em;
   }
 }
+
+@media (max-width: 400px) {
+  .ui.header {
+    white-space: normal !important;
+  }
+}

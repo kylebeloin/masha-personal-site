@@ -35,7 +35,7 @@ export const service = [
     details: "Text and Talk",
   },
   {
-    type: "Conference Abstract Reviewer",
+    type: "Abstract Reviewer",
     active: [2022],
     organization: "American Association of Corpus Linguistics (AACL)",
     role: "",
@@ -43,14 +43,14 @@ export const service = [
       "15th International American Association of Corpus Linguistics Conference",
   },
   {
-    type: "Conference Abstract Reviewer",
+    type: "Abstract Reviewer",
     active: [2021],
     organization: "Graduate Student Association of Applied Linguistics (GSAAL)",
     role: "",
     details: "Graduate Student Association of Applied Linguistics Conference",
   },
   {
-    type: "Conference Abstract Reviewer",
+    type: "Abstract Reviewer",
     active: [2019],
     organization:
       "Pronunciation in Second Language Learning and Teaching (PSLLT)",
@@ -281,7 +281,7 @@ const sortServiceByType = (type) => {
       return 10000;
     case "Manuscript Reviewer":
       return 9999;
-    case "Conference Abstract Reviewer":
+    case "Abstract Reviewer":
       return 9998;
     case "Conference Organization":
       return 9997;
