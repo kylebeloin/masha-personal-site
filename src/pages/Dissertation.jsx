@@ -1,15 +1,16 @@
 import Page from "./Page";
 import { Header } from "semantic-ui-react";
-import grants from "../data/grants";
+
+import { awards } from "../data/awards";
 import React from "react";
-import { grantElement } from "../elements/grantElements";
+import { grantInlineElement } from "../elements/awardElements";
 
 export const Dissertation = () => {
+  const grants = awards.filter((award) => award.type === "grant");
   const title = "Dissertation Project";
   const content = (
     <>
       <Header>
-        {" "}
         The Effect of Web-Based Pragma-Prosodic Instruction and Aptitude on
         Learner Pragmatic Development
       </Header>
@@ -20,7 +21,7 @@ export const Dissertation = () => {
         {grants.map((grant, i) => {
           return (
             <React.Fragment key={i}>
-              {grantElement(grant)}
+              {grantInlineElement(grant)}
               {i + 1 === grants.length ? "" : ", "}
             </React.Fragment>
           );
@@ -39,12 +40,11 @@ export const Dissertation = () => {
         sentence stress) is fundamental for successful interaction. Learners
         need to be aware of not just what they say and to whom, but also how
         they say it. Despite the importance of prosody in interaction and the
-        difficulties English learners face to use it appropriately (Herrero &
-        Devís, 2020), pragmatic functions of prosody have been largely ignored
-        in textbooks and classroom instruction.{" "}
+        difficulties English learners face to use it appropriately (Herrero
+        &amp; Devís, 2020), pragmatic functions of prosody have been largely
+        ignored in textbooks and classroom instruction.
       </p>
       <p>
-        {" "}
         In this mixed-methods quasi-experimental study, 60 English learners from
         China are randomly assigned to the instruction group or the control
         group. Learners' use of prosody in requests before and after instruction
@@ -57,7 +57,7 @@ export const Dissertation = () => {
         study will provide important guidance for designing effective and
         practical digitally mediated contextualized prosody instruction and help
         to better understand the role of learners' aptitude in its
-        effectiveness.{" "}
+        effectiveness.
       </p>
       <p>Expected completion: Spring 2023</p>
     </>

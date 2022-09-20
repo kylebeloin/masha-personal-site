@@ -273,7 +273,7 @@ a.ui.ui:hover:not(.disabled__link) {
   }
 }
 
-@media (max-width: 854px) {
+@media (max-width: 1160px) {
   .menu__item--sidenav {
     display: block !important;
   }

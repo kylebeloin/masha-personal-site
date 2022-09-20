@@ -1,4 +1,5 @@
 import { Header } from "semantic-ui-react";
+
 export const education = [
   {
     level: "Ph.D.",
@@ -60,6 +61,12 @@ export const educationElement = (education, i) => {
     </Header>
   );
   return el;
+};
+
+export const educationElements = () => {
+  return education.map((education, i) => {
+    return educationElement(education, i);
+  });
 };
 
 export default education;

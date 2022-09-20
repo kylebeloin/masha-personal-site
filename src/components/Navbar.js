@@ -12,9 +12,11 @@ const options = (routes) => {
       key={e.path}
       as={NavLink}
       to={e.path}
-      style={{ display: "grid" }}
-    >
+      name={e.name}
+      style={{ display: "grid", minHeight: "40px" }}
+    ><>
       {e.name}
+      </>
     </Menu.Item>
   ));
 
@@ -52,12 +54,13 @@ export const items = (pathname, key) => {
         style: {
           display: "grid",
           padding: "0",
+          minHeight: "auto",
         },
       };
     } else {
       el = {
         key: `${route.name}-${key}-${i}`,
-        name: route.name,
+        name: `${route.name}`,
         as: NavLink,
         to: `/${route.path}`,
         active: pathname === `/${route.path}`,

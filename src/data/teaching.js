@@ -31,6 +31,7 @@
  * */
 export const teaching = [
   {
+    type: "teaching",
     subject: "ENG",
     number: 559,
     institution: "Northern Arizona University",
@@ -51,6 +52,7 @@ export const teaching = [
   // ENG 538: Cross-Cultural Aspects of Language Learning
   {
     subject: "ENG",
+    type: "teaching",
     number: 538,
     title: "Cross-Cultural Aspects of Language Learning",
     institution: "Northern Arizona University",
@@ -70,6 +72,7 @@ export const teaching = [
   {
     // BME 480: Parent and Community Involvement in ESL and Bilingual Programs Winter 2021 (online)
     subject: "BME",
+    type: "teaching",
     number: 480,
     title: "Parent and Community Involvement in ESL and Bilingual Programs",
     institution: "Northern Arizona University",
@@ -88,6 +91,7 @@ export const teaching = [
   },
   {
     subject: "ENG",
+    type: "teaching",
     number: 205,
     title: "The Academic Writer's Workshop",
     // Fall 2017; Spring 2018; Summer 2018 (hybrid)
@@ -100,24 +104,25 @@ export const teaching = [
       {
         year: 2018,
         semester: "Summer",
-        mode: "hybrid",
+        mode: "online",
         total: 1,
       },
       {
         year: 2018,
         semester: "Spring",
-        mode: null,
+        mode: "hybrid",
         total: 1,
       },
       {
         year: 2017,
         semester: "Fall",
-        mode: null,
+        mode: "hybrid",
         total: 1,
       },
     ],
   },
   {
+    type: "teaching",
     subject: "ENG",
     number: 105,
     title: "Critical Reading and Writing in the University Community",
@@ -183,6 +188,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: "ENG",
     number: 100,
     title: "Individualized Writing Instruction",
@@ -210,6 +216,7 @@ export const teaching = [
   {
     // ENG 528: Grammatical Foundations
     // Spring 2022
+    type: "teaching",
     subject: "ENG",
     number: 528,
     title: "Grammatical Foundations",
@@ -230,6 +237,7 @@ export const teaching = [
   //  ENG 308: Introduction to Linguistics
   // Fall 2022
   {
+    type: "teaching",
     subject: "ENG",
     number: 308,
     title: "Introduction to Linguistics",
@@ -249,6 +257,7 @@ export const teaching = [
   },
   // Intensive English Programs
   {
+    type: "teaching",
     subject: "ENG",
     number: 105,
     title:
@@ -275,6 +284,7 @@ export const teaching = [
   },
   // Language Schools
   {
+    type: "teaching",
     subject: null,
     number: null,
     title: "Business English (individual and group classes)",
@@ -305,6 +315,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title: "TOEFL preparation (individual and group classes)",
@@ -335,6 +346,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title: "IELTS preparation (individual and group classes)",
@@ -365,6 +377,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title: "Unified State Exam preparation (individual and group classes)",
@@ -395,6 +408,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title:
@@ -432,6 +446,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title: "English Integrated Skills for Intermediate Learners",
@@ -468,6 +483,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title: "English Integrated Skills for Advanced Learners",
@@ -504,6 +520,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title:
@@ -541,6 +558,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title: "German Integrated Skills for Intermediate Learners",
@@ -577,6 +595,7 @@ export const teaching = [
     ],
   },
   {
+    type: "teaching",
     subject: null,
     number: null,
     title: "Russian Integrated Skills for Beginners",
@@ -614,6 +633,7 @@ export const teaching = [
   },
   // High Schools
   {
+    type: "teaching",
     subject: null,
     number: null,
     title:

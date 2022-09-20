@@ -1,63 +1,181 @@
-import { Header } from "semantic-ui-react";
 export const awards = [
   {
     year: "2022",
-    name: "SGS Dissertation Award",
-    by: "Graduate College",
+    name: "The Graduate Student Government Scholarship",
+    by: "Graduate Student Government",
     institution: "Northern Arizona University",
+    amount: 2000,
+    type: "award",
+  },
+  {
+    year: "2022",
+    name: "Graduate Student Support Grant",
+    by: "BYU Law & Corpus Linguistics",
+    institution: "BYU",
+    amount: 750,
+    type: "award",
+  },
+  {
+    year: "2022",
+    name: "Graduate Student Award",
+    by: "Pronunciation in Second Language Learning and Teaching",
+    institution: "PSLLT",
+    amount: 750,
+    type: "award",
+  },
+  {
+    year: "2021",
+    name: "Patricia Mapes Andersen Scholarship",
+    by: "English Department, College of Arts and Letters",
+    institution: "Northern Arizona University",
+    amount: 500,
+    type: "award",
+  },
+  {
+    year: "2021",
+    name: "Gary Kenneth Buettner Scholarship",
+    by: "English Department, College of Arts and Letters",
+    institution: "Northern Arizona University",
+    amount: 325,
+    type: "award",
+  },
+  {
+    year: "2021",
+    name: "Travel Award",
+    by: "Graduate Student Government",
+    institution: "Northern Arizona University",
+    type: "award",
   },
   {
     year: "2020",
-    name: "Gary Kenneth Buettner Scholarship & Patricia Mapes Andersen Scholarship",
+    name: "Outstanding Teaching Assistant Award Nominee",
     by: "English Department, College of Arts and Letters",
     institution: "Northern Arizona University",
+    type: "award",
   },
   {
-    year: "2019",
-    name: "Gary Kenneth Buettner Scholarship & Patricia Mapes Andersen Scholarship",
+    year: "2020",
+    name: "Gary Kenneth Buettner Scholarship",
     by: "English Department, College of Arts and Letters",
     institution: "Northern Arizona University",
+    amount: 3150,
+    type: "award",
+  },
+  {
+    year: "2018",
+    name: "Cheryl Walsh Professional Growth Award",
+    by: "English Department, College of Arts and Letters",
+    institution: "Northern Arizona University",
+    type: "award",
   },
   {
     year: "2017",
     name: "S.H. Shot Award",
     by: "English Department, College of Arts and Letters",
     institution: "Northern Arizona University",
+    amount: 1600,
+    type: "award",
+  },
+  {
+    year: "2017",
+    name: "Dennis Oliver Travel Assistance Grant",
+    by: "AZTESOL",
+    institution:
+      "Arizona Association of Teachers of English as a Second Language",
+    type: "award",
+  },
+  // Fellowships
+  {
+    year: "2019 - 2023",
+    name: "Merit-based graduate assistantship and full tuition waiver",
+    by: "English Department, College of Arts and Letters",
+    institution: "Northern Arizona University",
+    type: "fellowship",
+  },
+  {
+    year: "2019 - 2023",
+    name: "Merit-based graduate assistantship and full tuition waiver",
+    by: "English Department, College of Arts and Letters",
+    institution: "Northern Arizona University",
+    type: "fellowship",
+  },
+  {
+    year: "2016 - 2018",
+    name: "Merit-based graduate assistantship and full tuition waiver",
+    by: "English Department, College of Arts and Letters",
+    institution: "Northern Arizona University",
+    type: "fellowship",
+  },
+  {
+    year: "2007 - 2012",
+    name: "Dean's High Honor List",
+    by: "Office of the Dean",
+    institution: "Penza State Pedagogical University",
+    type: "fellowship",
+  },
+  {
+    year: "2022",
+    name: "TIRF Doctoral Dissertation Grant",
+    by: "The International Research Foundation for English Language Education",
+    link: "https://www.tirfonline.org/doctoral-dissertation-grants/",
+    type: "grant",
+  },
+  {
+    year: "2022",
+    name: "NFMLTA-MLJ Graduate Dissertation Writing Support Grant",
+    by: "National Federation of Modern Language Teachers Associations",
+    link: "",
+    type: "grant",
+  },
+  {
+    year: "2022",
+    name: "Duolingo Research Grant",
+    by: "Duolingo",
+    link: "https://blog.duolingo.com/p/afdd21ae-2e18-4628-b5fe-d2c7ad484f89/",
+    type: "grant",
+  },
+  {
+    year: "2022",
+    name: "Language Learning Dissertation Grant",
+    by: "Language Learning",
+    type: "grant",
+  },
+  {
+    year: "2021",
+    name: "Support for Graduate Students",
+    by: "Office of the Vice President for Research",
+    type: "grant",
+    institution: "Northern Arizona University",
   },
 ];
 
-export const awardElement = (award, i) => {
-  let el;
+export default awards;
 
-  el = (
-    <Header key={`award-container-${i}`} size="small">
-      <Header.Subheader style={{ marginBottom: "0" }}>
-        <p style={{ marginBottom: "0" }}>
-          {award.by} <span className="year--emphasis">({award.year})</span>
-        </p>
-      </Header.Subheader>
-      <Header
-        as="a"
-        key={`award-title-${i}`}
-        size="tiny"
-        className="disabled__link"
-      >
-        {award.name}
-      </Header>
-      <Header.Subheader>
-        <p
-          style={{
-            marginBottom: "0",
-            fontWeight: "100",
-            opacity: 0.6,
-          }}
-        >
-          {award.institution}
-        </p>
-      </Header.Subheader>
-    </Header>
-  );
-  return el;
+const sortAwardsByYear = (years) => {
+  let year = years.split("-");
+  if (year.length > 1) {
+    return Math.max(year);
+  } else {
+    return year;
+  }
 };
 
-export default awards;
+const sortAwardsByType = (type) => {
+  switch (type) {
+    case "grant":
+      return 9999;
+    case "award":
+      return 9998;
+    case "fellowship":
+      return 9997;
+    default:
+      return 9996;
+  }
+};
+
+export const sortAwards = (a, b) => {
+  return (
+    sortAwardsByType(b.type) - sortAwardsByType(a.type) ||
+    sortAwardsByYear(b.year) - sortAwardsByYear(a.year)
+  );
+};

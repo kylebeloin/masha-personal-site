@@ -89,12 +89,15 @@ export const affiliationElements = (group) => {
                 key={`service-organization-${k}`}
                 size="tiny"
                 style={{
-                  display: "inline-block",
+                  display: "block",
                   marginBottom: "1rem",
                   marginTop: "1rem",
+                  maxWidth: "fit-content",
                 }}
                 className="service-organization link"
                 href={affiliation.link}
+                target="_blank"
+                rel="noreferrer"
               >
                 {affiliation.organization}
               </Header>
