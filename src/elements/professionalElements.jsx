@@ -68,7 +68,7 @@ export const professionalElement = (professional, i) => {
         >
           {professional.location}
         </p>
-        <Accordion panels={panes} />
+        <Accordion panels={panes} defaultActiveIndex={0} />
       </Header.Subheader>
     </Header>
   );
