@@ -38,7 +38,7 @@ export const projects = [
         height="500"
         src={process.env.PUBLIC_URL + "/images/british-council-logo.png"}
         alt={"British Council Logo."}
-        style={{ maxWidth: "33%", padding: "1rem" }}
+        style={{ maxWidth: "35%", padding: "1rem", marginTop: "2rem" }}
       />
     ),
   },
@@ -75,13 +75,51 @@ export const projects = [
       <Image
         size="medium"
         title="Duolingo Logo"
+        verticalAlign="middle"
         floated="right"
         width="500"
         height="500"
         src={process.env.PUBLIC_URL + "/images/duolingo-logo.png"}
         alt={"Duolingo Logo."}
-        style={{ maxWidth: "33%", padding: "2rem", marginTop: "1rem" }}
+        style={{ maxWidth: "35%", padding: "2rem", marginTop: "2rem" }}
       />
+    ),
+  },
+  {
+    // If true, card animates on hover. Set an "href: [link]" property on this card to link.
+
+    // Label at bottom of card (Header)
+    title: "The Literacy Center",
+    // Primary text on card
+    description: (
+      <>
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </>
+    ),
+    // Appears in grey at top of card
+    role: "Role 1, Role 2",
+
+    className: "projects__card",
+    img: (
+      <div style={{}}>
+        <Image
+          size="medium"
+          verticalAlign="middle"
+          title="The Literacy Center Logo"
+          floated="right"
+          width="500"
+          height="375"
+          src={process.env.PUBLIC_URL + "/images/tlc-logo.png"}
+          alt={"British Council Logo."}
+          style={{ maxWidth: "35%", padding: "1rem", marginTop: "1rem" }}
+        />
+      </div>
     ),
   },
   {
