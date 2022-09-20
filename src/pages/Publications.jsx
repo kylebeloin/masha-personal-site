@@ -1,16 +1,16 @@
 import Page from "./Page";
 import { publications, sortPublications } from "../data/publications";
 import { publicationElement } from "../elements/publicationElements";
-import { Divider, Header, Label } from "semantic-ui-react";
+import { Divider, Header, Label, Search } from "semantic-ui-react";
 import { groupBy } from "../utility";
+import { useSearch } from "../components/useSearch";
+import { useState, useEffect } from "react";
+
 // TODO: Add filter and sort / search
 
-export const Publications = () => {
-  const title = "Publications";
-
-  let sortedPublications = [...publications].sort(sortPublications);
-
-  const groupedPublications = groupBy(sortedPublications, "type").map(
+const groupSortPublications = (data) => {
+  let sortedPublications = [...data].sort(sortPublications);
+  let groupedPublications = groupBy(sortedPublications, "type").map(
     (grouped, i) => {
       return {
         group: grouped.group,
@@ -20,10 +20,34 @@ export const Publications = () => {
       };
     }
   );
+  return groupedPublications;
+};
+
+export const Publications = () => {
+  const [pubs, setPublications] = useState([]);
+  const { loading, results, value, handleSearchChange } = useSearch({
+    key: (pub) =>
+      ` ${pub.data?.abstract?.props?.children} ${pub.title.primary} ${
+        pub.title.secondary
+      } ${pub.authors.join(" ")}`,
+    source: publications,
+  });
+
+  const title = "Publications";
 
   const content = (
     <div style={{ position: "relative" }}>
-      {groupedPublications.map(({ group, items }, i) => {
+      <Search
+        style={{
+          display: "grid",
+        }}
+        open={false}
+        loading={loading}
+        placeholder={"Search..."}
+        onSearchChange={handleSearchChange}
+        value={value}
+      />
+      {pubs.map(({ group, items }, i) => {
         return (
           <section id={group} key={`${group}-${i}-div`}>
             <Divider horizontal section>
@@ -49,6 +73,23 @@ export const Publications = () => {
       })}
     </div>
   );
+
+  useEffect(() => {
+    let pubs;
+    if (results.length > 0) {
+      pubs = groupSortPublications(results);
+    } else {
+      pubs = groupSortPublications(publications);
+    }
+
+    setPublications(pubs);
+  }, [results]);
+
+  useEffect(() => {
+    let pubs = groupSortPublications(publications);
+    setPublications(pubs);
+  }, []);
+
   return <Page {...{ title, content }} />;
 };
 
