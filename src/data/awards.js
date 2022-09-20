@@ -11,7 +11,7 @@ export const awards = [
     year: "2022",
     name: "Graduate Student Support Grant",
     by: "BYU Law & Corpus Linguistics",
-    institution: "BYU",
+    institution: "Brigham Young University",
     amount: 750,
     type: "award",
   },
@@ -67,6 +67,7 @@ export const awards = [
     by: "English Department, College of Arts and Letters",
     institution: "Northern Arizona University",
     type: "award",
+    amount: 750,
   },
   {
     year: "2017",
@@ -119,6 +120,7 @@ export const awards = [
     by: "The International Research Foundation for English Language Education",
     link: "https://www.tirfonline.org/doctoral-dissertation-grants/",
     type: "grant",
+    amount: 3250,
   },
   {
     year: "2022",
@@ -126,6 +128,7 @@ export const awards = [
     by: "National Federation of Modern Language Teachers Associations",
     link: "",
     type: "grant",
+    amount: 2500,
   },
   {
     year: "2022",
@@ -133,18 +136,21 @@ export const awards = [
     by: "Duolingo",
     link: "https://blog.duolingo.com/p/afdd21ae-2e18-4628-b5fe-d2c7ad484f89/",
     type: "grant",
+    amount: 5000,
   },
   {
     year: "2022",
     name: "Language Learning Dissertation Grant",
     by: "Language Learning",
     type: "grant",
+    amount: 2000,
   },
   {
     year: "2021",
     name: "Support for Graduate Students",
     by: "Office of the Vice President for Research",
     type: "grant",
+    amount: 1500,
     institution: "Northern Arizona University",
   },
 ];
