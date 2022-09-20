@@ -41,7 +41,7 @@ export const Teaching = () => {
                         //   id={`${group}-${inner.group.replace(" ", "-")}`}
                       >
                         <>
-                          <Label color="red" ribbon horizontal>
+                          <Label color="red" ribbon>
                             {`${secondInner.group}`}
                           </Label>
                           {`${firstInner.group}`} &mdash;{" "}

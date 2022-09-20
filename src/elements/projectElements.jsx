@@ -23,43 +23,42 @@ export const projectCards = () => {
                     basic
                     key={`card-container-${i}`}
                   >
+                    <Header.Subheader className="projects__text">
+                      <p style={{ fontSize: "16px", marginTop: "0" }}>
+                        Role: {project.role}
+                      </p>
+                    </Header.Subheader>
                     {project?.principal?.length > 0 && (
-                      <Header.Subheader
-                        className="header--bold project--bold"
-                        style={{
-                          lineHeight: ".9",
-                        }}
-                      >
-                        <p className="project--bold">
+                      <Header.Subheader className="projects__text">
+                        <p style={{ fontSize: "16px", marginTop: "0" }}>
                           Principal Investigators: {project.principal}
                         </p>
                       </Header.Subheader>
                     )}
                     {project?.collaborators?.length > 0 && (
-                      <Header.Subheader
-                        className="header--bold project--bold"
-                        style={{
-                          lineHeight: ".9",
-                        }}
-                      >
-                        <p className="project--bold">
+                      <Header.Subheader className="projects__text">
+                        <p style={{ fontSize: "16px", marginTop: "0" }}>
                           Collaborators: {project.collaborators}
                         </p>
                       </Header.Subheader>
                     )}
-                    <Header.Subheader
-                      className="header--bold project--bold"
-                      style={{
-                        lineHeight: ".9",
-                      }}
-                    >
-                      <p className="project--bold">Role: {project.role}</p>
-                    </Header.Subheader>
+
                     <Header.Subheader className="projects__text">
                       <p style={{ fontSize: "16px", marginTop: "1em" }}>
                         {project.description}
                       </p>
                     </Header.Subheader>
+                    {project?.funding && (
+                      <p
+                        style={{
+                          fontSize: "16px",
+                          marginTop: "1em",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Funded By: {project.funding}
+                      </p>
+                    )}
                   </Segment>
                 </Grid.Column>
               </Grid.Row>

@@ -2,35 +2,9 @@ import Page from "./Page";
 import { Header } from "semantic-ui-react";
 import grants from "../data/grants";
 import React from "react";
+import { grantElement } from "../elements/grantElements";
 
 export const Dissertation = () => {
-  const grantElement = (grant) => {
-    let element;
-    if (grant?.link) {
-      element = (
-        <a
-          className="ui"
-          href={`${grant.link}`}
-          title={`${grant?.by ?? ""}`}
-          aria-label="link"
-          target={"_blank"}
-          rel="noreferrer"
-          key={"test"}
-        >
-          {grant.by}
-        </a>
-      );
-    } else {
-      element = (
-        <span key={"test"} className="ui">
-          {grant.by}
-        </span>
-      );
-    }
-
-    return element;
-  };
-
   const title = "Dissertation Project";
   const content = (
     <>

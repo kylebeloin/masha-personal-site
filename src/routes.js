@@ -7,6 +7,7 @@ import Dissertation from "./pages/Dissertation";
 import Projects from "./pages/Projects";
 import Teaching from "./pages/Teaching";
 import { Professional } from "./pages/Professional";
+import Service from "./pages/Service";
 
 export const routes = [
   { name: "Masha Kostromitina", path: "", element: Home },
@@ -16,6 +17,7 @@ export const routes = [
   // { name: "Presentations", path: "presentations", element: Presentations },
   // { name: "CV", path: "cv", element: Cv },
   { name: "Dissertation", path: "dissertation", element: Dissertation },
+  { name: "Service", path: "service", element: Service },
   [
     { name: "Teaching", path: "teaching", element: Teaching },
     { name: "Professional", path: "professional", element: Professional },
