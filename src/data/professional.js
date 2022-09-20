@@ -32,7 +32,11 @@ export const professional = [
     location: "Flagstaff, AZ",
     title: {
       primary: "Project Assistant",
-      secondary: "PI: Dr. Romy Ghanem, Project: Pronunciation Clinic",
+      secondary: (
+        <>
+          Project: Pronunciation Clinic <br /> PI: Dr. Romy Ghanem{" "}
+        </>
+      ),
     },
     responsibilities: [
       "Developed instructional materials",

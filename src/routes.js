@@ -17,11 +17,12 @@ export const routes = [
   // { name: "Presentations", path: "presentations", element: Presentations },
   // { name: "CV", path: "cv", element: Cv },
   { name: "Dissertation", path: "dissertation", element: Dissertation },
-  { name: "Service", path: "service", element: Service },
+
   [
     { name: "Teaching", path: "teaching", element: Teaching },
     { name: "Professional", path: "professional", element: Professional },
   ],
+  { name: "Service", path: "service", element: Service },
 ];
 
 export default routes;

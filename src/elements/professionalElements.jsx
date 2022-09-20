@@ -43,11 +43,21 @@ export const professionalElement = (professional, i) => {
           size="tiny"
         >
           {professional.title?.primary && professional.title.primary}
-          {professional.title.secondary &&
-            ` - ${professional.title.secondary}`}{" "}
         </Header>
       )}
       <Header.Subheader>
+        {professional.title?.secondary && (
+          <p
+            style={{
+              marginBottom: "0",
+              marginTop: "0",
+              marginLeft: "auto",
+              fontWeight: "400",
+            }}
+          >
+            {professional.title?.secondary}
+          </p>
+        )}
         <p
           style={{
             marginBottom: "0",
