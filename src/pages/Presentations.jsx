@@ -19,12 +19,10 @@ const groupSortPresentations = (data) => {
   return groupedPresentations;
 };
 
-const flattenSearchData = (pub) =>
-  `${pub.data?.abstract?.props?.children ?? ""} ${
-    pub.data?.keywords?.join(" ") ?? ""
-  } ${pub.data?.description?.props?.children ?? ""} ${pub.title.primary} ${
-    pub.title.secondary
-  } ${pub.with.join(" ")}`;
+const flattenSearchData = (pres) =>
+  `${pres.title.primary} ${pres.title.secondary} ${pres.with.join(" ")} ${
+    pres.conference
+  } ${pres.location}`;
 
 export const Presentations = () => {
   const [pres, setPresentations] = useState(
