@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./pages/Layout";
 import routes from "./routes";
 import withRouter from "./components/withRouter";
@@ -28,6 +28,8 @@ function App() {
             );
           }
         })}
+        {/* Fallback */}
+        <Route path="*" element={<Navigate replace to="/" />} />
       </Route>
     </Routes>
   );
