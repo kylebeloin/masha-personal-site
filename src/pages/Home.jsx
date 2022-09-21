@@ -40,7 +40,7 @@ export const Home = () => {
           page. You can download my{" "}
           <a
             className="ui"
-            href="https://kostromitina.s3.us-east-2.amazonaws.com/kostromitina_cv_14092022.pdf"
+            href="https://kostromitina.s3.us-east-2.amazonaws.com/kostromitina_cv_20092022.pdf"
             title={"Download Curriculum Vitae"}
             aria-label="link"
             target={"_blank"}
