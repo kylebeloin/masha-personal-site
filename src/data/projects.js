@@ -102,10 +102,10 @@ export const projects = [
         post-intervention assessments aimed that measure students' phonemic
         awareness skills. <br />
         <br />
-        <p style={{ textDecoration: "underline" }}>
+        <span style={{ textDecoration: "underline" }}>
           Click here to read a recent article about the program in the AZ Daily
           Sun.
-        </p>
+        </span>
       </>
     ),
     // Appears in grey at top of card

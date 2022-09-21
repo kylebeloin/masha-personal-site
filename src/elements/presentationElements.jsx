@@ -4,7 +4,12 @@ export const presentationElement = (presentation, i) => {
   let el;
 
   el = (
-    <Header key={`presentation-container-${i}`} size="small">
+    <Header
+      as={"article"}
+      key={`presentation-container-${i}`}
+      size="small"
+      style={{ marginBottom: "1rem" }}
+    >
       <Header.Subheader>
         <p style={{ marginBottom: "0" }}>
           {presentation.conference}{" "}
@@ -17,7 +22,7 @@ export const presentationElement = (presentation, i) => {
         className={`presentation__link ${
           !presentation.link ? "disabled__link" : ""
         }`}
-        as={"a"}
+        as={presentation.link ? "a" : "span"}
         href={presentation.link ? presentation.link : ""}
         target={"_blank"}
         onClick={presentation.link ? null : (event) => event.preventDefault()}

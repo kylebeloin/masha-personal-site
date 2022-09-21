@@ -23,13 +23,17 @@ const groupSortPublications = (data) => {
   return groupedPublications;
 };
 
+const flattenSearchData = (pub) =>
+  `${pub.data?.abstract?.props?.children ?? ""} ${
+    pub.data?.keywords?.join(" ") ?? ""
+  } ${pub.data?.description?.props?.children ?? ""} ${pub.title.primary} ${
+    pub.title.secondary
+  } ${pub.authors.join(" ")}`;
+
 export const Publications = () => {
-  const [pubs, setPublications] = useState([]);
+  const [pubs, setPublications] = useState(groupSortPublications(publications));
   const { loading, results, value, handleSearchChange } = useSearch({
-    key: (pub) =>
-      ` ${pub.data?.abstract?.props?.children} ${pub.title.primary} ${
-        pub.title.secondary
-      } ${pub.authors.join(" ")}`,
+    key: flattenSearchData,
     source: publications,
   });
 
@@ -84,11 +88,6 @@ export const Publications = () => {
 
     setPublications(pubs);
   }, [results]);
-
-  useEffect(() => {
-    let pubs = groupSortPublications(publications);
-    setPublications(pubs);
-  }, []);
 
   return <Page {...{ title, content }} />;
 };
