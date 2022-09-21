@@ -136,7 +136,7 @@ export const awards = [
     name: "Language Learning Dissertation Grant",
     by: "Language Learning",
     type: "grant",
-    amount: 2000,
+    amount: 1750,
   },
   {
     year: "2021",
