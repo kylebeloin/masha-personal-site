@@ -16,7 +16,6 @@ function searchReducer(state, action) {
       return { ...state, loading: false, results: action.results };
     case "UPDATE_SELECTION":
       return { ...state, value: action.selection };
-
     default:
       throw new Error();
   }
