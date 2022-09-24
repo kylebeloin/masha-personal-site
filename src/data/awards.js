@@ -4,7 +4,7 @@ export const awards = [
     name: "The Graduate Student Government Scholarship",
     by: "Graduate Student Government",
     institution: "Northern Arizona University",
-    amount: 2000,
+    amount: "2,000",
     type: "award",
   },
   {
@@ -58,7 +58,7 @@ export const awards = [
     name: "Gary Kenneth Buettner Scholarship",
     by: "English Department, College of Arts and Letters",
     institution: "Northern Arizona University",
-    amount: 3150,
+    amount: "3,150",
     type: "award",
   },
   {
@@ -74,7 +74,7 @@ export const awards = [
     name: "S.H. Shot Award",
     by: "English Department, College of Arts and Letters",
     institution: "Northern Arizona University",
-    amount: 1600,
+    amount: "1,600",
     type: "award",
   },
   {
@@ -108,12 +108,20 @@ export const awards = [
     type: "fellowship",
   },
   {
+    year: "2022 - 2023",
+    name: "Equity, diversity, and inclusion: Different varieties of accents in Aptis English listening tests",
+    by: "The British Council Assessment Research Grant",
+    type: "grant",
+    role: "Co-PI with Okim Kang",
+    amount: "28,385",
+  },
+  {
     year: "2022",
     name: "TIRF Doctoral Dissertation Grant",
     by: "The International Research Foundation for English Language Education",
     link: "https://www.tirfonline.org/doctoral-dissertation-grants/",
     type: "grant",
-    amount: 3250,
+    amount: "3,250",
   },
   {
     year: "2022",
@@ -121,7 +129,7 @@ export const awards = [
     by: "National Federation of Modern Language Teachers Associations",
     link: "",
     type: "grant",
-    amount: 2500,
+    amount: "2,500",
   },
   {
     year: "2022",
@@ -129,21 +137,21 @@ export const awards = [
     by: "Duolingo",
     link: "https://blog.duolingo.com/p/afdd21ae-2e18-4628-b5fe-d2c7ad484f89/",
     type: "grant",
-    amount: 5000,
+    amount: "5,000",
   },
   {
     year: "2022",
     name: "Language Learning Dissertation Grant",
     by: "Language Learning",
     type: "grant",
-    amount: 1750,
+    amount: "1,750",
   },
   {
     year: "2021",
     name: "Support for Graduate Students",
     by: "Office of the Vice President for Research",
     type: "grant",
-    amount: 1500,
+    amount: "1,500",
     institution: "Northern Arizona University",
   },
 ];
