@@ -27,6 +27,17 @@ export const awardElement = (award, i) => {
         >
           {award.institution}
         </p>
+        {award?.role && (
+          <p
+            style={{
+              marginBottom: "0",
+              fontWeight: "100",
+              opacity: 0.6,
+            }}
+          >
+            {`${award.role}`}
+          </p>
+        )}
         {award?.amount && (
           <p
             style={{
