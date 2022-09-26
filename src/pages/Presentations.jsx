@@ -36,16 +36,21 @@ export const Presentations = () => {
   const title = "Presentations";
   const content = (
     <div style={{ position: "relative" }}>
-      <Search
-        style={{
-          display: "grid",
-        }}
-        open={false}
-        loading={loading}
-        placeholder={"Search..."}
-        onSearchChange={handleSearchChange}
-        value={value}
-      />
+      <div className={"search__container"} style={{ position: "relative" }}>
+        <Search
+          style={{
+            display: "grid",
+          }}
+          open={false}
+          loading={loading}
+          placeholder={"Search..."}
+          onSearchChange={handleSearchChange}
+          value={value}
+        />
+        <p style={{ position: "absolute", top: "25%", right: "2.67142857em" }}>
+          {results.length > 0 && <span>{results.length} Results</span>}
+        </p>
+      </div>
       {pres.map((group, i) => {
         return (
           <section id={group.group} key={`${group.group}-${i}-div`}>
