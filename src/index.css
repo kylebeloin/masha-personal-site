@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -347,5 +348,14 @@ a.ui.ui:hover:not(.disabled__link) {
 @media (max-width: 400px) {
   .ui.header {
     white-space: normal !important;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: unset !important;
   }
 }
