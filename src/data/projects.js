@@ -38,7 +38,7 @@ export const projects = [
         height="500"
         src={process.env.PUBLIC_URL + "/images/british-council-logo.png"}
         alt={"British Council Logo."}
-        style={{ maxWidth: "35%", padding: "1rem", marginTop: "2rem" }}
+        style={{ maxWidth: "35%", padding: "0.75rem", marginTop: "2rem" }}
       />
     ),
   },
@@ -81,7 +81,7 @@ export const projects = [
         height="500"
         src={process.env.PUBLIC_URL + "/images/duolingo-logo.png"}
         alt={"Duolingo Logo."}
-        style={{ maxWidth: "35%", padding: "2rem", marginTop: "2rem" }}
+        style={{ maxWidth: "35%", padding: "1rem", marginTop: "2rem" }}
       />
     ),
   },
@@ -124,7 +124,7 @@ export const projects = [
           height="375"
           src={process.env.PUBLIC_URL + "/images/tlc-logo.png"}
           alt={"British Council Logo."}
-          style={{ maxWidth: "35%", padding: "1rem", marginTop: "1rem" }}
+          style={{ maxWidth: "35%", padding: "0.75rem", marginTop: "1rem" }}
         />
       </div>
     ),
