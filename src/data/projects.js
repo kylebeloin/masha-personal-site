@@ -24,8 +24,8 @@ export const projects = [
       </>
     ),
     // Appears in grey at top of card
-    role: "Research Assistant",
-    principal: "Okim Kang",
+    role: "Co-Principal Investigator",
+    principal: "Okim Kang & Maria Kostromitina",
     collaborators: "",
     funding: "British Council Assessment Grant 2022",
     className: "projects__card",
