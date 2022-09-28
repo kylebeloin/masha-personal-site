@@ -1,6 +1,6 @@
 import { Container, Grid, Sidebar, Menu } from "semantic-ui-react";
 import { Outlet, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Navbar, items } from "../components/Navbar";
 import Aside from "../components/Aside";
 
@@ -13,9 +13,18 @@ export default function Layout() {
     setVisible(!visible);
   };
 
+  const scrollToTop = useCallback(() => {
+    const main = document.querySelector("#main__content");
+    const pushable = document.querySelector(".pushable");
+    main.scrollTop = 0;
+    pushable.scrollTop = 0;
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     setVisible(false);
-  }, [location]);
+    scrollToTop();
+  }, [location, scrollToTop]);
 
   return (
     <div>
@@ -42,6 +51,7 @@ export default function Layout() {
               computer={10}
               tablet={16}
               className="main__right--background"
+              id="main__content"
             >
               <Container className="main__right__text">
                 <Outlet />
