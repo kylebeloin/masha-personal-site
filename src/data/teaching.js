@@ -74,7 +74,7 @@ export const teaching = [
     subject: "BME",
     type: "teaching",
     number: 480,
-    title: "Parent and Community Involvement in ESL and Bilingual Programs",
+    title: "Foundations of ESL/Bilingual Instruction",
     institution: "Northern Arizona University",
     location: "Flagstaff, AZ",
     level: "University",
