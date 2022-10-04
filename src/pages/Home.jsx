@@ -12,19 +12,25 @@ export const Home = () => {
         </Divider>
         <p>Thank you for visiting my website!</p>
         <p>
-          I am a Ph.D. candidate in Applied Linguistics at Northern Arizona
-          University. My research interests lie at the intersection of second
-          language prosody and pragmatics. Specifically, I investigate the
-          effectiveness of pragma-prosodic training in improving learners' use
-          of prosody in speech acts and the role of cognitive individual
-          differences in prosody acquisition. I have also been involved in
-          research projects in the domains of speech perception, language
-          assessment, and corpus linguistics.
+          I am an applied linguist and a language educator with over 10 years of
+          research and professional experience in language teaching and
+          learning. My interdisciplinary research lies at the intersection of
+          second language prosody and pragmatics. Specifically, I research the
+          effectiveness of web-based pragma-prosodic training in improving
+          learners' interactional skills and the role of cognitive individual
+          differences in prosody acquisition. My other projects have focsued on
+          World Englishes in language assessment, corpus linguistic
+          investigations of L1/L2 spoken and written discourse, and research
+          methods in Applied Linguistics. My research has been supported by
+          several leading organizations, including The British Council,
+          Duolingo, The International Research Foundation, the National
+          Federation of Modern Language Teachers Association, and the Language
+          Learning journal.
         </p>
         <p>
           Apart from my work in Applied Linguistics, I enjoy climbing and
           hiking. Other interests of mine include learning languages (so far, I
-          have tackled German, French, and Mandarin), cats, and traveling.
+          have tackled German, French, and Mandarin), yoga, and traveling.
         </p>
 
         <p>
