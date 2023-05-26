@@ -38,7 +38,7 @@ export const Aside = () => {
             as="h3"
             className="header--bold sidebar__info mobile-centered"
           >
-            Maria (Masha) Kostromitina
+            Maria (Masha) Kostromitina, Ph.D.
             <Header.Subheader>
               <a className={"ui"} href={"mailto:masha@nau.edu"}>
                 masha@nau.edu
@@ -47,7 +47,7 @@ export const Aside = () => {
           </Header>
           <hr className="sidebar__hr mobile-centered" />
           <p>
-            PhD candidate in Applied Linguistics{" "}
+            Applied Linguist{" "}
             <a className="ui" href={"https://twitter.com/NAU"}>
               @NAU
             </a>{" "}
