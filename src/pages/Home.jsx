@@ -18,7 +18,7 @@ export const Home = () => {
           second language prosody and pragmatics. Specifically, I research the
           effectiveness of web-based pragma-prosodic training in improving
           learners' interactional skills and the role of cognitive individual
-          differences in prosody acquisition. My other projects have focsued on
+          differences in prosody acquisition. My other projects have focused on
           World Englishes in language assessment, corpus linguistic
           investigations of L1/L2 spoken and written discourse, and research
           methods in Applied Linguistics. My research has been supported by
