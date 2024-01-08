@@ -3,7 +3,7 @@ import { Header } from "semantic-ui-react";
 export const education = [
   {
     level: "Ph.D.",
-    graduated: "2023 Expected",
+    graduated: "2023",
     area: "Applied Linguistics",
     school: "Northern Arizona University",
     country: "United States",

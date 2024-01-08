@@ -47,12 +47,12 @@ export const Aside = () => {
           </Header>
           <hr className="sidebar__hr mobile-centered" />
           <p>
-            Applied Linguist{" "}
-            <a className="ui" href={"https://twitter.com/NAU"}>
-              @NAU
+            Assessment Specialist{" "}
+            <a className="ui" href={"https://twitter.com/duolingo"}>
+              @Duolingo
             </a>{" "}
-            researching L2 speech, pragmatics, and corpus linguistics | Language
-            learning addict | Cats and climbing | (she/her)
+            doing research in L2 speech, pragmatics, and corpus linguistics |
+            Language learning addict | Cats and climbing | (she/her)
           </p>
 
           <Social />

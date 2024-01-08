@@ -17,6 +17,58 @@
  */
 export const presentations = [
   {
+    year: 2024,
+    title: {
+      primary:
+        "Assessing learners' interactional competence through AI-generated speaking tasks",
+      secondary: "",
+    },
+    with: [],
+    conference: "IATEFL 2024 Conference",
+    location: "Brighton, UK",
+    format: "oral presentation",
+    type: "teaching-oriented",
+  },
+  {
+    year: 2024,
+    title: {
+      primary:
+        "Enhancing EFL learners' pragmatic competence through web-based prosodic instruction",
+      secondary: "",
+    },
+    with: [],
+    conference: "AAAL 2024 Conference",
+    location: "Houston, TX",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2024,
+    title: {
+      primary:
+        "The Duolingo English Test: Using AI to revolutionize test development",
+      secondary: "",
+    },
+    with: [],
+    conference: "TESOL 2024 Convention",
+    location: "Tampa, FL",
+    format: "oral presentation",
+    type: "teaching-oriented",
+  },
+  {
+    year: 2023,
+    title: {
+      primary:
+        "Exploring features of elaborate vs. compressed language in spoken academic discourse: An SEM approach.",
+      secondary: "",
+    },
+    with: ["Goulart, L.", "Larsson, T."],
+    conference: "44th ICAME onference",
+    location: "Online",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
     year: 2022,
     title: {
       primary: "Invited lecture on pragmatic features of spoken discourse",
@@ -132,7 +184,7 @@ export const presentations = [
     type: "research",
   },
   {
-    year: 2022,
+    year: 2023,
     title: {
       primary:
         "Fairness of Using Different English Accents in Listening Tasks of the Duolingo English Test",
@@ -141,6 +193,45 @@ export const presentations = [
     with: ["Kang, O.", "Yan, X.", "Thomson, R.", "Isaacs, T."],
     conference: "Language Assessment Research Conference",
     location: "Chicago, IL.",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2023,
+    title: {
+      primary:
+        "Shared-L1 effects in listening tasks of the Duolingo English Test: Test-takers' attitudes and score variance",
+      secondary: "",
+    },
+    with: ["Kang, O.", "Yan, X.", "Thomson, R.", "Isaacs, T."],
+    conference: "AAAL 2023 Conference",
+    location: "Portland, OR.",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2024,
+    title: {
+      primary:
+        "Study and scale quality in L2 speech perception: A methodological synthesis",
+      secondary: "",
+    },
+    with: ["Sudina, K", "Baghlaf, E."],
+    conference: "AAAL 2024 Conference",
+    location: "Houston, TX.",
+    format: "oral presentation",
+    type: "research",
+  },
+  {
+    year: 2024,
+    title: {
+      primary:
+        "Linguistic features of compression and elaboration in spoken academic discourse: Exploring discipline and interactivity",
+      secondary: "",
+    },
+    with: ["Goulart, L.", "Larsson, T."],
+    conference: "44th ICAME Conference",
+    location: "Online",
     format: "oral presentation",
     type: "research",
   },

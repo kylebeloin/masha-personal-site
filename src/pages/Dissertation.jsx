@@ -59,7 +59,7 @@ export const Dissertation = () => {
         to better understand the role of learners' aptitude in its
         effectiveness.
       </p>
-      <p>Expected completion: Spring 2023</p>
+      <p> Completed: Spring 2023</p>
     </>
   );
   return <Page {...{ title, content }} />;
